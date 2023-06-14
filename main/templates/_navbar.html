@@ -1,0 +1,103 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container-fluid" >
+      <a class="navbar-brand user-select-none" href="#">
+        <img class="logo" src="{% static 'img/logo-2.png'%}" alt="15 Temmuz Federasyonyu Logo" style="width: 7rem;"><p class="text-center temmuz-fed"> 15 TEMMUZ FEDERASYONU </p> </a>
+        
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link fw-bold" aria-current="page" href="#" >ANA SAYFA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" href="#" >GENEL BAŞKANLIK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" href="#" >KURUMSAL</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+              İL BAŞKANLIKLARI
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item " href="#">ANTALYA</a></li>
+              <li><a class="dropdown-item " href="#">İSTANBUL</a></li>
+              <li><a class="dropdown-item " href="#">DİYARBAKIR</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" href="#" >AZIZ SEHITLERIMIZ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" href="#" >BASIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fw-bold" href="#" >İLETİŞİM</a>
+          </li>
+        </ul>
+        
+        <ul class="navbar-nav">  
+        <li class="nav-item">
+          <a class="nav-link  fw-bold" href="#" >GIRIS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link  fw-bold" href="#" >BAĞIŞ</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+ 
+  </nav>
+
+  <script type="text/javascript">
+    //! Put the class name that you want to use
+    // Class name that will be added to the navbar element in the "scrolled" state
+    const SCROLLED_STATE_CLASS = "change-fix-top"
+    const SCROLLED_NAVLINK_CLASS = "text-white"
+
+
+    //! Use your own ID or selector
+    // The id of navigation bar HTML element
+    const NAVBAR_ID = "navbar"
+    
+
+
+    // Get the navigation bar element
+    const navbar = document.getElementById(NAVBAR_ID)
+    const navlink = document.getElementsByClassName("nav-link")
+
+
+    // OnScroll event handler
+    const onScroll = () => {
+
+      // Get scroll value
+      const scroll = document.documentElement.scrollTop
+
+      // If scroll value is more than 0 - means the page is scrolled, add or remove class based on that
+      if (scroll > 40) {
+        navbar.classList.add(SCROLLED_STATE_CLASS);
+        
+        
+        for(var i = 0; i < navlink.length; i++)
+        {
+            navlink[i].className += " text-white";
+        }
+      } else {
+        navbar.classList.remove(SCROLLED_STATE_CLASS)
+        
+        for(var i = 0; i < navlink.length; i++)
+        {
+            navlink[i].classList.remove('text-white');
+        }
+        
+      }
+    }
+
+      // Use the function
+      window.addEventListener('scroll', onScroll)
+  </script>   
