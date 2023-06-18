@@ -1,0 +1,27 @@
+.donation-desc { 
+    height: fit-content;
+    margin-top: 10%;
+    
+}
+.donation-desc h2 { 
+
+font-family: 'Montserrat' sans-serif;
+font-weight: bolder;
+}
+
+
+.donation-desc h4{ 
+    margin-top: 2%;
+    font-family: 'Montserrat';
+}
+
+.donation-logo { 
+    height: 70%;
+    margin-top: 15%;
+}
+
+.donation-btn { 
+    margin-top: 2%;
+    background-color: #c18c58!important;
+    
+}

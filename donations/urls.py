@@ -1,5 +1,7 @@
 from django.urls import path
-from .views import donationPage
+
+from .views import donationsPage , donationPage
 urlpatterns = [ 
-    path('bagislar' , donationPage)
-]
+    path('bagislar' , donationsPage) , 
+    path('bagislar/<int:pk>' , donationPage)
+] 

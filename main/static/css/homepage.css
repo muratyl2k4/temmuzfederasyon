@@ -58,7 +58,7 @@
   color: white;
   font-weight: bold;
   margin-right: auto;
-  background-color: rgba(255, 166, 0, 0.599) !important;
+  background-color: rgba(255, 166, 0, 0.8) !important;
   border: none;
   transition: 0.3s;
 }
@@ -383,7 +383,10 @@ h3:after {
 #donation { 
   background: url(black-back.png);
   background-color: #494242;
+  width: 100%;
   height: fit-content;
+  padding-bottom: 20px;
+  
 }
 
 .donation-pack { 
