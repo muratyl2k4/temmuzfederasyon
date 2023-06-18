@@ -642,6 +642,34 @@ h3:after {
  /*  */
 
 #footer {
-  height: 50%;
+  height: fit-content;
   background-color: rgb(0, 0, 0);
+}
+.footer h4{
+  font-family: 'Montserrat' sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.footer p{
+  font-family: 'Montserrat' sans-serif;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+}
+
+.footer .links{
+  text-decoration: none;
+  color: white;
+}
+
+.footer a{
+  text-decoration: none;
+  transition: 0.5s;
+}
+.footer a:hover{
+  color: white;
+}
+.footer .instagramF { 
+  color: #ff006f;
 }
