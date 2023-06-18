@@ -1,0 +1,8 @@
+.sehits {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dont-disp{
+    display: none;
+}
