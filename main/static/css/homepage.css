@@ -29,6 +29,10 @@
   .icon-bar { 
     display: none;
   }
+
+  .my_wrapper .my_carousel{
+    grid-auto-columns: calc(100% / 1) !important;
+  }
 }
 .logo { 
   margin-left: 20%!important;
@@ -161,7 +165,8 @@ body,
 
 .mini-title {
   font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
 }
 
 .mini-desc {
@@ -383,6 +388,7 @@ h3:after {
 #donation { 
   background: url(black-back.png);
   background-color: #494242;
+  width: 100%;
   width: 100%;
   height: fit-content;
   padding-bottom: 20px;
@@ -672,4 +678,60 @@ h3:after {
 }
 .footer .instagramF { 
   color: #ff006f;
+}
+
+
+
+/*  BEKİR */
+
+#sehitler {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  min-height: 25vh;
+  background-image: url('../img/back.jpg');
+
+}
+
+.sehitler_top {
+  color: white;
+  display:grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.my_wrapper{
+  /*max-width: 1200px;*/
+  width: 100%;
+}
+
+.my_wrapper .my_carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(100% / 3);
+  overflow: hidden;
+  /*overflow-x: auto;*/
+  /*scroll-snap-type: x mandatory;*/
+  scroll-behavior:smooth;
+  scrollbar-width: 0;
+  margin-bottom: 0px !important;
+}
+
+.my_carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.my_carousel .my_card {
+  list-style: none;
+  height: 342px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.my_card .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
