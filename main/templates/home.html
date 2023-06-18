@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://kit.fontawesome.com/5af3974b3f.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="{%static 'js/script.js'%}" defer></script>
     <title>15TemmuzFederasyonu</title>
 </head>
 <body>
@@ -174,7 +175,7 @@
                 </div>
               </div>
               <div class="row w-100 read-more">
-                <a type="button" class="btn btn-lg mx-auto mb-5" href="#">TUM PAKETLER</a>
+                <a type="button" class="btn btn-lg mx-auto mb-5" href="bagislar">TUM PAKETLER</a>
               </div>
             </section>
               
@@ -225,7 +226,28 @@
               <a type="button" class="btn btn-lg mx-auto mb-5 mt-4" href="#">TUM HABERLER</a>
             </div>
             </section>
+            
+            <section id="sehitler">
+              <div class="sehitler_top">
+                <h2 style="margin-top: 25px;">AZİZ ŞEHİTLERİMİZ</h2>
+                <button>Tüm Şehitlerimiz</button>
+                <span style="justify-content: center; margin-left: 30%;">15 Temmuz 2016</span>
+              </div>
+              <div class="my_wrapper">
+                <ul class="my_carousel">
+                  {%for sehit in sehitler%}
+                  <li class="my_card">
+                    <span style="color: white;">{{sehit.Sehit_Ismi}}</span>
+                    <h2 style="color: white;">{{sehit.Sehit_Meslegi}} - {{sehit.Sehit_Dogum_Yili}}</h2>
+                    <div class="img"><img src="{{sehit.Sehit_Resmi}}" alt=""></div>
+                  </li>
+                  {%endfor%}
+                </ul>
+              </div>
+                
 
+            </section>
+    
 
             <section id="social-media" class="mx-auto">
               <h1 class="col-12 text-center news-text text-white">SOSYAL MEDYA</h1>
