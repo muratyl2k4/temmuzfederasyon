@@ -29,13 +29,14 @@
         
       </div>
     </div>
-    <div class="row w-100 home-drc" style="margin-top: 200px; width: 100%; ">
-              <div class="col-sm-6">
-                <p class="home-text text-center">  "Yeryüzünde hiç bir millet yoktur ki vatanı ve devleti uğruna yediden yetmişe canını vermekte tereddüt etmesin:
+    <div class="row w-100 home-drc " style="margin-top: 200px; width: 100%;">
+              <div class="col-sm-6 mx-auto ">
+                <p class="home-text text-start text-wrap">  "Yeryüzünde hiç bir millet yoktur ki vatanı ve devleti uğruna yediden yetmişe canını vermekte tereddüt etmesin:
                 işte bu, Büyük Türk Milletidir."</p>
                 <p class="manager-title text-end">Emre Şahin</p>
                 <p class="general-manager-text text-end">Genel Başkan</p>
               </div>
+              <!--
                 <div class="col-sm-6 justify-content-end">
                   
                 
@@ -72,7 +73,7 @@
                     </button>
                   </center>
                 </div>
-
+                  -->
                 
               </div>
             </section>
@@ -133,7 +134,7 @@
                   </div>
                   <div class="card-info">
                       {{new.Description|slice:60}}...
-                    <a href="#">Haberi oku<span class="licon icon-arr icon-black"></span></a>
+                    <a href="haberler/{{new.id}}">Haberi oku<span class="licon icon-arr icon-black"></span></a>
                   </div>
                 
                 </div>
@@ -145,15 +146,15 @@
               </div>
 
               <div class="row w-100 read-more">
-              <a type="button" class="btn btn-lg mx-auto mb-5 mt-4" href="#">TUM HABERLER</a>
+              <a type="button" class="btn btn-lg mx-auto mb-5 mt-4" href="haberler">TUM HABERLER</a>
             </div>
             </section>
             
             <section id="sehitler">
               <div class="sehitler_top">
                 <h2 style="margin-top: 25px;">AZİZ ŞEHİTLERİMİZ</h2>
-                <button onclick="location.href='sehitler'">Tüm Şehitlerimiz</button>
-                <span style="justify-content: center; margin-left: 30%;">15 Temmuz 2016</span>
+                <button class="btn" onclick="location.href='sehitler'" style="background-color: #8e7c49  !important;">Tüm Şehitlerimiz</button>
+                <span class="text-center" ><i class="fa-solid fa-star" style="color: #dd6d03;"></i>15 TEMMUZ 2016<i class="fa-solid fa-star" style="color: #dd6d03;"></i></span>
               </div>
               <div class="my_wrapper">
                 <ul class="my_carousel">
@@ -172,7 +173,7 @@
     
 
             <section id="social-media" class="mx-auto">
-              <h1 class="col-12 text-center news-text text-white">SOSYAL MEDYA</h1>
+              <h1 class="col-12 text-center news-text">SOSYAL MEDYA</h1>
                 <div class="container social-medias row w-100 mx-auto">
                   <div class="col-lg-1"></div>
                   <div class="cardd mx-auto col-lg-3">

@@ -1,0 +1,60 @@
+
+.navbar { 
+    background-color: gray;
+}
+.nav-link { 
+    color: black!important;
+}
+.news-header {  
+    font-family: 'Montserrat' , sans-serif;
+    width: fit-content;
+    align-self: center;
+}
+
+#newsPage { 
+    height: fit-content;
+    background-color: rgb(255, 255, 255)!important;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.newCard { 
+    height: 400px!important;
+    
+}
+.newCardBody { 
+    height: 100%;
+    width: 90%!important;
+    background-color: white;
+    text-align: centers;
+
+}
+
+.newTitle { 
+    font-family: 'Montserrat' ,sans-serif;
+    font-size: 16px;
+}
+
+#newPage {
+ margin-top: 200px;
+}
+
+
+@media screen and (max-width:600px) {
+    .new { 
+        width: 80%!important;
+    }
+}
+.new {
+    background-color: white;
+    width:50%;
+}
+
+.new-image { 
+    height: 500px;
+    margin-top: -50px!important;
+    border-top-left-radius:  2%;
+    border-top-right-radius:  2%;
+    border-bottom-right-radius:  2%;
+    border-bottom-left-radius:  2%;
+}

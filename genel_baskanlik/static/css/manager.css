@@ -1,0 +1,13 @@
+#manager {
+    margin-top: 180px;
+    margin-bottom: 180px;
+}
+.manager-row { 
+    width: 60%;
+}
+.nav-link { 
+    color: black!important;
+}
+.manager-text { 
+    width: 100%;
+}

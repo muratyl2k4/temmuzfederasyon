@@ -9,6 +9,10 @@ font-family: 'Montserrat' sans-serif;
 font-weight: bolder;
 }
 
+.nav-link { 
+    color: black!important;
+}
+
 
 .donation-desc h4{ 
     margin-top: 2%;

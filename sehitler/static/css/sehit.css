@@ -1,8 +1,33 @@
 .sehits {
     display: flex;
     flex-wrap: wrap;
+    min-height: 400px;
+    width: 90%;
 }
 
 .dont-disp{
     display: none;
+}
+
+#sehitler {
+    background: url(../../../main/static/img/back.jpg) no-repeat center center fixed;
+
+}
+
+.title-15 { 
+    font-family: 'Montserrat' , sans-serif;
+    color: #ff952b;
+    width: 100%; 
+    margin-top: 150px;
+    font-weight:500;
+}
+
+.sehit-isim { 
+    color:white;
+    font-size: 24px;
+}
+.sehit-info { 
+    color: #ff952b;
+    font-size: 16px;
+    font-family: 'Montserrat' , sans-serif;
 }

@@ -4,7 +4,7 @@ class Kurul(models.Model):
     Yonetici_Ismi = models.CharField(max_length=100 , null=True , blank=True)
     Yonetici_Sifati = models.CharField(max_length=100 , null=True , blank=True)
     Yonetici_Biyografi = models.TextField(null=True , blank=True)
-    Yonetici_Resmi = models.ImageField(upload_to='genel_baskanlik/static/img/',null=True , blank=True)
+    Yonetici_Resmi = models.ImageField(upload_to='djangouploads/genel_baskanlik/images/',null=True , blank=True)
 
     class Meta:
         abstract= True

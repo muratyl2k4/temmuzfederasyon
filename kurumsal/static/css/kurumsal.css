@@ -1,0 +1,26 @@
+#kurumsal { 
+    margin-top: 180px;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.nav-link { 
+    color: black!important;
+}
+
+.container { 
+    margin-bottom: 100px;
+}
+
+.container h1{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+.container p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}

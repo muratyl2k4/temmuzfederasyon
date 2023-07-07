@@ -1,0 +1,25 @@
+#board { 
+    margin-top: 180px;
+}
+
+.nav-link {
+    color: black!important;
+}
+
+.manager { 
+    font-family: 'Montserrat' , sans-serif;
+}
+.manager-row {
+    width: 90%;
+}
+.manager-name { 
+    color: red;
+}
+.manager-adjective { 
+    color: #a65f18;
+}
+.manager-image { 
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 20%;
+}

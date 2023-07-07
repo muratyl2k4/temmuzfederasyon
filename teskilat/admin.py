@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Iller
-# Register your models here.
-admin.site.register(Iller)
+from .models import Il_Baskanligi , Ilce_Baskanligi
+admin.site.register(Il_Baskanligi)
+admin.site.register(Ilce_Baskanligi)

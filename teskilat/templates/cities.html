@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/homepage.css'%}">
+    <link rel="stylesheet" href="{% static 'css/cities.css'%}">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/5af3974b3f.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body style="background: url('{% static "img/black-back.png" %}'); background-color:rgb(220,220,220);">
+
+    {% load static %}
+
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container-fluid" >
+      <a class="navbar-brand user-select-none" href="#">
+        <img class="logo" src="{% static 'img/logo-2.png'%}" alt="15 Temmuz Federasyonyu Logo" style="width: 7rem;"><p class="text-center temmuz-fed"> 15 TEMMUZ FEDERASYONU </p> </a>
+        
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="../" >ANA SAYFA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="../genelbaskanlik" >GENEL BAŞKANLIK</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="../kurumsal" >KURUMSAL</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="iller" role="button" data-bs-toggle="dropdown-menu" aria-expanded="false" >
+              İL BAŞKANLIKLARI
+            </a>
+            {% load asd %}
+            <ul class="dropdown-menu row mx-auto">
+              {% x %}
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="../sehitler" >AZİZ ŞEHİTLERİMİZ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="../haberler" >BASIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="../iletisim" >İLETİŞİM</a>
+          </li>
+        </ul>
+        
+        <ul class="navbar-nav">  
+        <li class="nav-item">
+          <a class="nav-link  " href="#" >GİRİŞ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="../bagislar" > BAĞIŞ YAP <i class="fa-solid fa-heart-circle-plus" style="color: #ff0000;"></i></a>
+        </li>
+      </ul>
+      </div>
+    </div>
+ 
+  </nav>
+
+  <script type="text/javascript">
+    //! Put the class name that you want to use
+    // Class name that will be added to the navbar element in the "scrolled" state
+    const SCROLLED_STATE_CLASS = "change-fix-top"
+    const SCROLLED_NAVLINK_CLASS = "text-white"
+
+
+    //! Use your own ID or selector
+    // The id of navigation bar HTML element
+    const NAVBAR_ID = "navbar"
+    
+
+
+    // Get the navigation bar element
+    const navbar = document.getElementById(NAVBAR_ID)
+    const navlink = document.getElementsByClassName("nav-link")
+
+
+    // OnScroll event handler
+    const onScroll = () => {
+
+      // Get scroll value
+      const scroll = document.documentElement.scrollTop
+
+      // If scroll value is more than 0 - means the page is scrolled, add or remove class based on that
+      if (scroll > 40) {
+        navbar.classList.add(SCROLLED_STATE_CLASS);
+        
+        /*
+        for(var i = 0; i < navlink.length; i++)
+        {
+            navlink[i].className += " text-white";
+        }*/
+      } else {
+        navbar.classList.remove(SCROLLED_STATE_CLASS)
+        /*
+        for(var i = 0; i < navlink.length; i++)
+        {
+          navlink[i].classList.remove('text-white');
+        }
+        */
+        
+      }
+    }
+
+      // Use the function
+      window.addEventListener('scroll', onScroll)
+  </script>   
+
+   <section id='cities'>
+        <div class="container row mx-auto">
+            {% for city in cities %}
+                <div class="col-sm-2 text-center mb-5">
+                    <div onclick="location.href = 'iller/{{city.Sehir_Ismi}}'" class="mx-auto wrapper text-white " style="height: 100px; width: 100px; border-radius: 50%; ">
+                        <span class="plaka-kodu align-middle">{{ city.Sehir_Plaka_Kodu }}</span>
+                    </div>
+                    <p class="city-name" >{{ city.Sehir_Ismi }}</p>
+                </div>
+            {% endfor %}
+        </div>
+   </section>
+    {% include '_footer.html' %}
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v17.0" nonce="Ss5egiqo"></script>    
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/5af3974b3f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>

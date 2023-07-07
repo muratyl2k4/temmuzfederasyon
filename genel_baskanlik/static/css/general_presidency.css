@@ -1,0 +1,27 @@
+#parts { 
+    height: fit-content;
+    padding: 20 auto;
+    margin-top: 180px;
+}
+
+.nav-link { 
+    color: black!important;
+}
+
+.parts button{
+    height: 250px;
+    margin-left: 12%;
+    margin-bottom: 40px;
+    color: #fd9c3a;
+    font-family: 'Montserrat' , sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 25%;
+    border-color: #0000007e;
+    transition: 0.5s;
+}
+.parts button:hover { 
+    background-color: black;
+    color: white;
+}
+
