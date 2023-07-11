@@ -4,4 +4,5 @@ urlpatterns = [
     path('genelbaskanlik' , generalPresidencyPage) , 
     path('genelbaskanlik/<str:kurul>' , boardPage) , 
     path('<str:kurul>/<int:id>' , managerPage) , 
+    
 ]

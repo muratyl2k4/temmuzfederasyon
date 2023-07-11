@@ -20,6 +20,9 @@ class Il_Baskanligi(models.Model):
     Yonetici_Resmi = models.ImageField(upload_to='djangouploads/teskilat/il_baskanligi/')
     Yonetici_Durumu = models.CharField(max_length=50 ,choices=[('Baskan' , 'Baskan') , 
                                                                ('Diger' , 'Diger')] ,default='Diger' ,  null=True , blank=True)
+
+    def __str__(self):
+        return self.Yonetici_Ismi
 class Ilce_Baskanligi(models.Model):
     Yonetici_Il = models.ForeignKey(Ilce , null=True , blank=True , on_delete=models.CASCADE)
     Yonetici_Ismi = models.CharField(max_length=200 , null=True ,blank=True)
@@ -28,3 +31,5 @@ class Ilce_Baskanligi(models.Model):
     Yonetici_Resmi = models.ImageField(upload_to='djangouploads/teskilat/ilce_baskanligi/')
     Yonetici_Durumu = models.CharField(max_length=50 ,choices=[('Baskan' , 'Baskan') , 
                                                                ('Diger' , 'Diger')] ,default='Diger' ,  null=True , blank=True)
+    def __str__(self):
+            return self.Yonetici_Ismi

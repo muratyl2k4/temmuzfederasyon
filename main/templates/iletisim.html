@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://kit.fontawesome.com/5af3974b3f.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/logo-2.png'%}" type="image/x-icon"/>
     <title>15TemmuzFederasyonu</title>
     <style>
         .nav-link { 
@@ -25,15 +26,26 @@
     {% include '_navbar.html' %}
     
     <section id="iletisim" style="margin-top: 200px; margin-bottom: 200px;">
+        <form method="post" action="">{% csrf_token %}
         <div class="container row mx-auto">
             <h2 class="iletisim text-center">İLETİŞİM</h2>
-            <input class="col-sm-4 offset-lg-1 mb-3 " type="text" name="name" id="name" placeholder="Ad">
-            <input class="col-sm-4 offset-lg-1 mb-3 " type="text" name="lastname" id="lastname" placeholder="Soyad">
-            
-            <input class="col-sm-4 offset-lg-1 mb-3 " type="text" name="name" id="name" placeholder="E-mail">
-            <input class="col-sm-4 offset-lg-1 mb-3 " type="text" name="lastname" id="lastname" placeholder="Telefon">
-            
-            <textarea class="form-control col-6" aria-label="With textarea" placeholder="Mesajinizi veya onerinizi yaziniz..."></textarea>
+                <div class="col-lg-6 text-center">
+                <input class="w-75 mb-3 " type="text" name="name" id="name" placeholder="Ad">
+             </div>
+                <div class="col-lg-6 text-center">
+                    <input class="w-75 mb-3 " type="text" name="lastname" id="lastname" placeholder="Soyad">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <input class="w-75 mb-3 " type="text" name="name" id="name" placeholder="E-mail">
+                </div>
+                <div class="col-lg-6 text-center">
+                    <input class="w-75 mb-3 " type="text" name="lastname" id="lastname" placeholder="Telefon">
+                </div>
+                
+                
+                <textarea class="form-control col-6" aria-label="With textarea" placeholder="Mesajinizi veya onerinizi yaziniz..."></textarea>
+                <button type="submit" class="btn btn-primary rounded-0 col-4 mx-auto mt-2 fs-2">MESAJINI GÖNDER</button>    
+            </form>
         </div>
     </section>
 

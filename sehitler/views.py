@@ -4,7 +4,7 @@ from sehitler.models import Sehit
 
 
 def sehitler_page(request):
-
+  
     sehit_objects = Sehit.objects.all()
 
     data = {'sehitler' : sehit_objects}

@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="https://kit.fontawesome.com/5af3974b3f.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" href="{% static 'img/logo-2.png'%}" type="image/x-icon"/>
+
+    <title>{{kurul_isim}}</title>
 </head>
 <body style="background: url('{% static "img/black-back.png" %}'); background-color:rgb(220,220,220);">
 
     {% include '_navbar.html '%}
     <section id="board">
-        <h2 class="board-name text-center">KURUL ISMI</h2>
+        <h2 class="board-name text-center">{{kurul_isim}}</h2>
         <div class="managers row w-75 mx-auto">
         {% for manager in kurul %}
             <div class="manager col-sm-3 mt-3 mb-2 justify-content-center" onclick="location.href='../{{link_kurul}}/{{manager.id}}'">

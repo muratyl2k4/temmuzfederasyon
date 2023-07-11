@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'sehitler',
     'kurumsal',
     'donations',
+    'temmuz15gecesi',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -128,6 +129,7 @@ STATIC_URL = 'static/'
 import os
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'donations/static/'),
+    os.path.join(BASE_DIR, 'temmuz15gecesi/static/'),
 ]
 
 

@@ -7,12 +7,17 @@
   font-weight: bold;
   font-size: 30%;
 }
+.nav-link { 
+  color: #ffffff!important;
+  font-size: 18px!important;
+  font-family:'Montserrat' ,sans-serif!important;
+  
+}
 @media screen and (max-width:600px) {
   .logo-text ,  .general-manager-text , .manager-title  , .home-text{ 
     display: none;
   }
   .logo {
-    
     font-family: 'Montserrat' sans-serif;
   }
 
@@ -21,7 +26,7 @@
   }
   .change-fix-top { 
     margin: 0 auto;
-    height: fit-content;
+    
     
   }
   
@@ -34,6 +39,21 @@
 
   .my_wrapper .my_carousel{
     grid-auto-columns: calc(100% / 1) !important;
+  }
+
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.66)!important;
+  }
+  .nav-link { 
+    color: black!important;
+  }
+  .dropdown-menu { 
+    display: none!important;
+  }
+  .container-fluid { 
+    height: 100%!important;
+    width: 100%!important;
+    
   }
 }
 .logo { 
@@ -75,7 +95,7 @@
 
 .change-fix-top{ 
   margin: 10 0;
-  height: 150px;
+  height: fit-content;
   width: 100%;
   background-color: rgb(255, 255, 255)!important; 
 }
@@ -90,12 +110,7 @@
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
-.nav-link { 
-  color: #ffffff!important;
-  font-size: 18px!important;
-  font-family:'Montserrat' ,sans-serif!important;
-  
-}
+
 .nav-link:hover { 
   color: #a65f18!important;
 }
@@ -452,6 +467,10 @@ h3:after {
   margin: 5 0;
 }
 
+.card-title  { 
+  font-family: 'Montserrat' , sans-serif;
+}
+
 .fa-cc-visa { 
   transition: 0.3s;
 }
@@ -535,15 +554,18 @@ h3:after {
 }
 
 .social-medias .cardd:nth-child(1) .icon {
-  background: #e07768;
-}
-
-.social-medias .cardd:nth-child(2) .icon {
   background: #ff00cc;
 }
 
-.social-medias .cardd:nth-child(3) .icon {
+.social-medias .cardd:nth-child(2) .icon {
   background: #007bff;
+}
+
+.social-medias .cardd:nth-child(3) .icon {
+  background: #4267B2;
+}
+.social-medias .cardd:nth-child(4) .icon {
+  background: red;
 }
 
 
@@ -733,6 +755,10 @@ h3:after {
 }
 .footer .instagramF { 
   color: #ff006f;
+}
+
+.footer .youtubeF { 
+  color: red;
 }
 
 

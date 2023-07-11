@@ -1,0 +1,10 @@
+.district-title { 
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 36px;
+}
+
+@media screen and (max-width: 640px){
+    .district-title { 
+        font-size: 100%;
+    }
+}

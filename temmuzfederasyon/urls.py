@@ -13,6 +13,7 @@ urlpatterns = [
     path('' , include('kurumsal.urls')),
     path('' , include('genel_baskanlik.urls')),
     path('' , include('teskilat.urls')),
+    path('' , include('temmuz15gecesi.urls')),
     
 
     path('admin/', admin.site.urls),

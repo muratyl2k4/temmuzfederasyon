@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="{%static 'js/script.js'%}" defer></script>
-    <title>15TemmuzFederasyonu</title>
+    <link rel="icon" href="{% static 'img/logo-2.png'%}" type="image/x-icon"/>
+    <title>15 Temmuz Federasyonu</title>
 </head>
 <body>
   <div class="icon-bar">
@@ -118,7 +119,7 @@
              
               </div>
               <div class="row w-100 read-more">
-                <a type="button" class="btn btn-lg mx-auto mb-5" href="bagislar">TUM PAKETLER</a>
+                <a type="button" class="btn btn-lg mx-auto mt-4 mb-3 rounded-0" href="bagislar">TÜM PAKETLER</a>
               </div>
             </section>
               
@@ -146,14 +147,14 @@
               </div>
 
               <div class="row w-100 read-more">
-              <a type="button" class="btn btn-lg mx-auto mb-5 mt-4" href="haberler">TUM HABERLER</a>
+              <a type="button" class="btn btn-lg mx-auto mb-2 mt-4 rounded-0" href="haberler">TÜM HABERLER</a>
             </div>
             </section>
             
             <section id="sehitler">
               <div class="sehitler_top">
                 <h2 style="margin-top: 25px;">AZİZ ŞEHİTLERİMİZ</h2>
-                <button class="btn" onclick="location.href='sehitler'" style="background-color: #8e7c49  !important;">Tüm Şehitlerimiz</button>
+                <button class="btn" onclick="location.href='sehitler'" style="background-color: #8e7c49 !important;">TÜM ŞEHİTLERİMİZ</button>
                 <span class="text-center" ><i class="fa-solid fa-star" style="color: #dd6d03;"></i>15 TEMMUZ 2016<i class="fa-solid fa-star" style="color: #dd6d03;"></i></span>
               </div>
               <div class="my_wrapper">
@@ -175,59 +176,76 @@
             <section id="social-media" class="mx-auto">
               <h1 class="col-12 text-center news-text">SOSYAL MEDYA</h1>
                 <div class="container social-medias row w-100 mx-auto">
-                  <div class="col-lg-1"></div>
+                  
                   <div class="cardd mx-auto col-lg-3">
-                    <div class="face face1">
+                    <div class="face face1 mx-auto">
                         <div class="content">
                             <div class="icon">
                                 <i class="fa fa-instagram" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="face face2">
+                    <div class="face face2 mx-auto">
                         <div class="content">
                             <h3>
-                                <a href="https://www.instagram.com/temmuzfederasyon/" target="_blank">15 Temmuz Federasyonu</a>
+                                <a href="https://www.instagram.com/temmuzfederasyon/" target="_blank">15 TEMMUZ FEDERASYONU</a>
                             </h3>
-                            <p>15 Temmuz Federasyonunu Instagram'da Takip Et</p>
+                            <p>15 Temmuz Federasyonunu Instagram'da Takip Edin...</p>
                         </div>
                     </div>
                 </div>
                 <div class="cardd mx-auto col-lg-3">
-                    <div class="face face1">
+                    <div class="face face1 mx-auto">
                         <div class="content">
                             <div class="icon">
                                 <i class="fa fa-twitter-square" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="face face2">
+                    <div class="face face2 mx-auto">
                         <div class="content">
                             <h3>
                                 <a href="https://twitter.com/15temfederasyon" target="_blank">15 TEMMUZ FEDERASYONU</a>
                             </h3>
-                            <p>15 Temmuz Federasyonu Twitter Hesabini Takip Edin...</p>
+                            <p>15 Temmuz Federasyonu Twitter Hesabını Takip Edin...</p>
                         </div>
                     </div>
                 </div>
                 <div class="cardd mx-auto col-lg-3">
-                    <div class="face face1">
+                    <div class="face face1 mx-auto">
                         <div class="content">
                             <div class="icon">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="face face2">
+                    <div class="face face2 mx-auto">
                         <div class="content">
                             <h3>
                                 <a href="https://www.facebook.com/profile.php?id=100078131591078" target="_blank">Emre Sahin</a>
                             </h3>
-                            <p>Emre Sahini Facebook'ta Takip Et...</p>
+                            <p>Emre Şahini Facebook'ta Takip Edin...</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-1"></div>
+                <div class="cardd mx-auto col-lg-3">
+                    <div class="face face1 mx-auto">
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="face face2 mx-auto">
+                        <div class="content">
+                            <h3>
+                                <a href="#" target="_blank">15 TEMMUZ FEDERASYONU</a>
+                            </h3>
+                            <p>15 Temmuz Federasyonuna Youtube'da Abone Ol...</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>  
                 </div>
                  
@@ -244,48 +262,34 @@
                 </div>
                 <div class="july15-content" >
                   <div class="j15-line">
+                    {% for tem in temmuz15 %}
+                     {% if tem.id|divisibleby:"2" == True %}
                   <div class="row w-100">
                     <div class="col-sm-4 text-end content-text">
-                      <h4>Darbeciler, Genelkurmay Başkanlığını bastı.</h4>
-                      <h4>15 Temmuz 21:25</h4>
-                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa nam blanditiis? Error commodi, ut minima quaerat corporis culpa perferendis! </p>
+                      <h4>{{tem.Title}}</h4>
+                      <h4>{{tem.Time}}</h4>
+                      <p> {{tem.Description}} </p>
                     </div>
                     <div class="col-sm-4 text-center">
-                      <img class="j15-content-image" src="fed.jpg" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
+                      <img class="j15-content-image" src="../{{tem.Image}}" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
                     </div>
                 </div>
+                {% else %}
                 <div class="row w-100">
                   <div class="col-lg-4 offset-lg-4 text-center">
-                    <img class="j15-content-image" src="fed.jpg" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
+                    <img class="j15-content-image" src="../{{tem.Image}}" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
                   </div>
                   <div class="col-lg-4 text-start content-text">
-                    <h4>Darbeciler, Genelkurmay Başkanlığını bastı.</h4>
-                    <h4>15 Temmuz 21:25</h4>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa nam blanditiis? Error commodi, ut minima quaerat corporis culpa perferendis! </p>
+                    <h4>{{tem.Title}}</h4>
+                    <h4>{{tem.Time}}</h4>
+                    <p> {{tem.Description}} </p>
                   </div>
                 </div>
+                {% endif %}
+                <hr class="w-50 mx-auto" style="color: white;">
+                {% endfor  %}
                 <div class="row w-100">
-                  <div class="col-lg-4 text-end content-text">
-                    <h4>Darbeciler, Genelkurmay Başkanlığını bastı.</h4>
-                    <h4>15 Temmuz 21:25</h4>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa nam blanditiis? Error commodi, ut minima quaerat corporis culpa perferendis! </p>
-                  </div>
-                  <div class="col-lg-4 text-center">
-                    <img class="j15-content-image" src="fed.jpg" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
-                  </div>
-                </div>
-                <div class="row w-100">
-                  <div class="col-sm-4 offset-lg-4 text-center">
-                    <img class="j15-content-image" src="fed.jpg" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
-                  </div>
-                  <div class="col-sm-4 text-start content-text">
-                    <h4>Darbeciler, Genelkurmay Başkanlığını bastı.</h4>
-                    <h4>15 Temmuz 21:25</h4>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In culpa nam blanditiis? Error commodi, ut minima quaerat corporis culpa perferendis! </p>
-                  </div>
-                </div>
-                <div class="row w-100">
-                  <a href="#" class="col-lg-4 more-circle offset-lg-4 mx-auto" style="width: 200px; height: 200px;">
+                  <a href="15temmuzgecesi" class="col-lg-4 more-circle offset-lg-4 mx-auto" style="width: 200px; height: 200px;">
                     <p class="circle-text mt-5">GECENİN <br> DEVAMI <br> ...</p>
                   </a>
                 </div>

@@ -5,3 +5,5 @@ class Temmuz15(models.Model):
     Title = models.CharField(max_length=200 , null=True , blank=True)
     Time = models.CharField(max_length=200 , null=True , blank=True)
     Description = models.TextField(null=True , blank=True)
+    def __str__(self) :
+        return self.Title

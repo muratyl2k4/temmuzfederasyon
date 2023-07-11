@@ -1,0 +1,42 @@
+.arrow {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.arrow:hover {
+    background-color: darkgray;
+}
+
+.nav-link { 
+    color: black!important;
+}
+.containerrr { 
+    width: 90%!important;
+}
+.night-title  , .night-time{
+    width: fit-content;
+    font-family: 'Montserrat' , sans-serif;
+}
+.night-title { 
+    font-size: 24px;
+    
+}
+.night-time { 
+    
+    color: white;
+    background-color: rgb(255, 64, 0);
+    font-size: 16px;
+}
+
+.night-desc { 
+    background-color: rgba(255, 255, 255, 0.45);
+}

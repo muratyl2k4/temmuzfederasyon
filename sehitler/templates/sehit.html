@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/homepage.css'%}">
-    <link rel="stylesheet" href="{% static 'css/sehit.css'%}">
+    <link rel="stylesheet" href="{% static 'css/person.css'%}">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://kit.fontawesome.com/5af3974b3f.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <title>15TemmuzFederasyonu</title>
+    <link rel="icon" href="{% static 'img/logo-2.png'%}" type="image/x-icon"/>
+
+    <title>{{sehit.Sehit_Ismi}}</title>
     <style>
         .nav-link { 
             color: black!important;
@@ -24,26 +27,23 @@
 <body>
     {% include '_navbar.html' %}
     
-    <section id="donation" style="
-    background: url(../../main/static/img/black-back.png);
-    margin-top: 160px;  
-    background-color: gray;
-      ">
+    <section id="person">
 
-        <div class="row donation-packs container px-5 mx-auto">
-          <div class="col-lg-4 mt-3" style="background: url('../{{sehit.Sehit_Resmi}}') no-repeat center center;
-          background-size: cover;
-           width: 300px; 
-           height: 400px;">
-            
-          </div>
-          <div class="col-lg-8 ">
-          <div class="donation-desc justify-content-center mt-5" >
-            <h2 class="text-center">{{sehit.Sehit_Ismi}}</h2>
-            <h4 class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus laboriosam soluta nostrum placeat quae magni atque aliquam commodi incidunt quod. </h4>
-            
+      <div class="container row mx-auto ">
+        <div class="col-lg-12 row mx-auto">
+            <div class="col-lg-3 text-center">
+                <img  class="leader-img shadow-lg" src="../{{sehit.Sehit_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
             </div>
-          </div>
+            <div class="col-lg-6 text-center">
+                <span class="leader-name">{{sehit.Sehit_Ismi }}</span>
+                <hr class="w-50 mx-auto">
+                <p class="leader-bio"> {{sehit.Sehit_Biyografi }}</p>
+            </div>
+            <div class="col-lg-3 py-3 position-relative text-center">
+                <h2 class="position-absolute top-50 start-50 translate-middle leader-adjective my-auto">{{sehit.Sehit_Meslegi }}</h2> 
+            </div>
+        </div>
+    </div>
           
           
         </div>

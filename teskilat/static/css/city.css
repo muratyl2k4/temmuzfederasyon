@@ -1,28 +1,18 @@
+
+#head {
+    
+    background-color: black;
+    height: 250px;
+}
 #city { 
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
-
-
-.leader-name { 
-    font-size: 36px;
+.city-title { 
+    color: white;
+    margin-top: 180px;
     font-family: 'Montserrat' , sans-serif;
-}
-
-.leader-bio { 
-    background-color: #a65f186f;
-    border-radius: 1%;
-    
-}
-
-.leader-adjective { 
-    
-    font-family:'Montserrat' , sans-serif;
-    font-weight: 500;
-    width: 70%;
-    background-color: burlywood;
-    
 }
 
 .manager-img { 
@@ -40,3 +30,4 @@
     font-size: 16px;
 
 }
+

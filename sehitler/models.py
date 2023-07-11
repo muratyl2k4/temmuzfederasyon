@@ -6,3 +6,6 @@ class Sehit(models.Model):
     Sehit_Dogum_Yili = models.IntegerField(null=True , blank=True)
     Sehit_Resmi = models.ImageField(upload_to='djangouploads/sehitler/images', blank=True , null=True)
     Sehit_Biyografi = models.TextField(null=True , blank=True)
+
+    def __str__(self) :
+        return self.Sehit_Ismi
