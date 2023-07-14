@@ -5,13 +5,13 @@ from news.models import New
 from temmuz15gecesi.models import Temmuz15
 from teskilat.models import Ilce
 from teskilat.models import Il
+import time
 # Create your views here.
 
 
 
 def homePage(request):
-   
-    sehit_objects = Sehit.objects.all()
+    sehit_objects = Sehit.objects.all()[0:10]
     donation_objects = Bagis.objects.all()[0:3]
     new_objects = New.objects.all()[0:3]
     temmuz15_objects = Temmuz15.objects.all()[0:4]

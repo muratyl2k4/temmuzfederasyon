@@ -1,3 +1,7 @@
+body { 
+    background: url(../../../main/static/img/black-back.png);
+}
+
 .donation-desc { 
     height: fit-content;
     margin-top: 10%;

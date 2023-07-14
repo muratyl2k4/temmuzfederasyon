@@ -6,7 +6,7 @@ const sehits_children = [...sehits.children];
 
 const txt_changed = () =>{
     console.clear()
-    value_temp = text_box_sehit.value
+    value_temp = text_box_sehit.value.toUpperCase()
 
     sehits_children.forEach(elements => {
         div_card = [...elements.children]

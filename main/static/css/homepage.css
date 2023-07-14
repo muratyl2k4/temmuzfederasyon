@@ -1,4 +1,6 @@
 /* Home Page */
+
+
 @import url('https://fonts.googleapis.com/css?family=Elsie_Swash_Caps');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Roboto_Slab');
@@ -9,9 +11,15 @@
 }
 .nav-link { 
   color: #ffffff!important;
-  font-size: 18px!important;
+  font-size: 110%!important;
   font-family:'Montserrat' ,sans-serif!important;
+  font-weight: bolder!important;
   
+}
+@media screen and (max-width:1500px) {
+  .nav-link { 
+    font-size:16px!important;
+  }
 }
 @media screen and (max-width:600px) {
   .logo-text ,  .general-manager-text , .manager-title  , .home-text{ 
@@ -60,7 +68,7 @@
   margin-left: 20%!important;
 }
 .temmuz-fed{
-  color: #a65f18;
+  color: #c59245;
   font-family: 'Montserrat' ,sans-serif;
   font-size: 16px;
 }
@@ -84,8 +92,9 @@
   color: white;
   font-weight: bold;
   margin-right: auto;
-  background-color: rgba(255, 166, 0, 0.8) !important;
+  background-color: #dfb244!important;
   border: none;
+  
   transition: 0.3s;
 }
 
@@ -98,6 +107,8 @@
   height: fit-content;
   width: 100%;
   background-color: rgb(255, 255, 255)!important; 
+  box-shadow: 0px 15px 10px -15px #111;  
+
 }
 .change-fix-top .nav-link{
   color: #000!important;
@@ -180,6 +191,59 @@ body,
   /* animation: name duration timing-function delay iteration-count direction fill-mode;
 */
 }
+.image-container {
+
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-fill-mode:inherit;
+
+}
+
+.image-container img:first-child {
+  width: 300px;
+  height: 300px;
+  animation-name: slideIn;
+  animation-delay: 0s; /* İlk resim animasyona hemen başlasın */
+  animation-iteration-count: infinite; /* İlk resim animasyona hemen başlasın */
+}
+
+.image-container img:last-child {
+  width: 290px;
+  height: 300px;
+  animation-name: slideOut;
+  animation-delay: 0.5s; /* İkinci resim, ilk resmin animasyonu tamamlandıktan sonra başlasın */
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+
 
 @keyframes animate-background {
   0%,100% {
@@ -454,7 +518,7 @@ h3:after {
 /* Donation */
 
 #donation { 
-  background: url(black-back.png);
+  background: url(../img/black-back.png);
   background-color: #494242;
   width: 100%;
   width: 100%;
@@ -517,6 +581,10 @@ h3:after {
   background-color: #000;
 }
 
+.sepet { 
+  background-color: orange;
+  border-top-right-radius: 10%;
+}
 .facebook {
   background: #3B5998;
   color: white;
@@ -534,6 +602,7 @@ h3:after {
 .youtube{
   background: #ff0000;
   color: white;
+  border-bottom-right-radius: 10%;
 }
 
 .social-medias .cardd {
@@ -699,7 +768,7 @@ h3:after {
   text-align: center;
   width: 200px; 
   height: 200px; 
-  background-color: rgb(145, 145, 0);
+  background-color: #dfb244;
   text-decoration: none;
  }
  .more-circle p{
@@ -818,7 +887,5 @@ h3:after {
   object-fit: cover;
 }
 .my_card .img{
-
   margin-bottom: -20px;
-  
 }

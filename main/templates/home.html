@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"/>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +17,7 @@
     <title>15 Temmuz Federasyonu</title>
 </head>
 <body>
-  <div class="icon-bar">
-    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-    
-  </div>
+
   {% include '_navbar.html' %}
   
   <section id="coverr">
@@ -94,12 +90,12 @@
                       <hr class="w-75 mx-auto">
                       <p class="card-text col-4 text-center my-auto mini-title">
                       </p>
-                      <p class="card-text col-4 text-center my-auto mini-title">TUTAR
+                      <p class="card-text col-4 text-center my-auto mini-title">Güvenli ödeme
                       </p>
                       <div class="card-text col-4 text-center mini-title"> 
                       </div>
                       <p class="text-center mini-desc col-4 fw-bold"> <i class="fa-brands fa-cc-visa  fa-2xl" style="color: #000000;"></i></p>
-                      <p class="text-center mini-desc col-4  fw-bold"> {{donation.Tutar}}TL</p>
+                      <p class="text-center mini-desc col-4  fw-bold"><i class="fa-solid fa-shield-halved fa-xl" style="color: #dfb244;;"></i></p>
                       <p class="text-center mini-desc col-4  "> <i class="fa-brands fa-cc-mastercard  fa-2xl" style="color: #000000;"></i></p>
                       <hr class="w-75 mx-auto">
                       <div class="col-6">
@@ -107,7 +103,7 @@
                         </button>
                         </div>
                         <div class="col-6">
-                        <button  class="text-center card-button"><i class="fa-solid fa-heart" style="color: white;"></i> Bağış Yap
+                        <button  class="text-center card-button" style="background-color: #dfb244;"><i class="fa-solid fa-heart" style="color: white;"></i> Bağış Yap
                         </button>
                       </div>
 
@@ -119,7 +115,7 @@
              
               </div>
               <div class="row w-100 read-more">
-                <a type="button" class="btn btn-lg mx-auto mt-4 mb-3 rounded-0" href="bagislar">TÜM PAKETLER</a>
+                <a type="button" class="btn btn-lg mx-auto mt-4 mb-3" style="background-color: #dfb244;" href="bagislar">TÜM PAKETLER</a>
               </div>
             </section>
               
@@ -147,25 +143,25 @@
               </div>
 
               <div class="row w-100 read-more">
-              <a type="button" class="btn btn-lg mx-auto mb-2 mt-4 rounded-0" href="haberler">TÜM HABERLER</a>
+              <a type="button" class="btn btn-lg mx-auto mb-2 mt-4" style="background-color: #dfb244;" href="haberler">TÜM HABERLER</a>
             </div>
             </section>
             
             <section id="sehitler">
               <div class="sehitler_top">
                 <h2 style="margin-top: 25px;">AZİZ ŞEHİTLERİMİZ</h2>
-                <button class="btn" onclick="location.href='sehitler'" style="background-color: #8e7c49 !important;">TÜM ŞEHİTLERİMİZ</button>
+                <button class="btn" onclick="location.href='sehitler'" style="background-color: #dfb244 !important;">TÜM ŞEHİTLERİMİZ</button>
                 <span class="text-center" ><i class="fa-solid fa-star" style="color: #dd6d03;"></i>15 TEMMUZ 2016<i class="fa-solid fa-star" style="color: #dd6d03;"></i></span>
               </div>
               <div class="my_wrapper">
                 <ul class="my_carousel">
                   {%for sehit in sehitler%}
-                  <li class="my_card">
+                  <li onclick="location.href = 'sehitler/{{sehit.id}}'" class="my_card">
                     <span style="color: white;">{{sehit.Sehit_Ismi}}</span>
                     <h2 style="color: white;">{{sehit.Sehit_Meslegi}} - {{sehit.Sehit_Dogum_Yili}}</h2>
                     <div class="img"><img src="{{sehit.Sehit_Resmi}}" alt=""></div>
                   </li>
-                  {%endfor%}
+                  {% endfor %}
                 </ul>
               </div>
                 
@@ -173,7 +169,7 @@
             </section>
     
 
-            <section id="social-media" class="mx-auto">
+            <section id="social-media" class="mx-auto" style="background:url(../static/img/black-back.png);">
               <h1 class="col-12 text-center news-text">SOSYAL MEDYA</h1>
                 <div class="container social-medias row w-100 mx-auto">
                   
@@ -222,9 +218,9 @@
                     <div class="face face2 mx-auto">
                         <div class="content">
                             <h3>
-                                <a href="https://www.facebook.com/profile.php?id=100078131591078" target="_blank">Emre Sahin</a>
+                                <a href="https://www.facebook.com/temmuz.federasyon" target="_blank">15 TEMMUZ FEDERASYONU</a>
                             </h3>
-                            <p>Emre Şahini Facebook'ta Takip Edin...</p>
+                            <p>15 Temmuz Federasyonu'nu Facebook'ta Takip Edin...</p>
                         </div>
                     </div>
                 </div>
@@ -239,9 +235,9 @@
                     <div class="face face2 mx-auto">
                         <div class="content">
                             <h3>
-                                <a href="#" target="_blank">15 TEMMUZ FEDERASYONU</a>
+                                <a href="https://www.youtube.com/channel/UCBILSIl3WHSIRP2WsAU0FLg" target="_blank">15 TEMMUZ FEDERASYONU</a>
                             </h3>
-                            <p>15 Temmuz Federasyonuna Youtube'da Abone Ol...</p>
+                            <p>15 Temmuz Federasyonuna Youtube'da Abone Olun...</p>
                         </div>
                     </div>
                 </div>
@@ -268,7 +264,7 @@
                     <div class="col-sm-4 text-end content-text">
                       <h4>{{tem.Title}}</h4>
                       <h4>{{tem.Time}}</h4>
-                      <p> {{tem.Description}} </p>
+                      <p> {{tem.Description|slice:250}}...</p>
                     </div>
                     <div class="col-sm-4 text-center">
                       <img class="j15-content-image" src="../{{tem.Image}}" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
@@ -282,7 +278,7 @@
                   <div class="col-lg-4 text-start content-text">
                     <h4>{{tem.Title}}</h4>
                     <h4>{{tem.Time}}</h4>
-                    <p> {{tem.Description}} </p>
+                    <p> {{tem.Description|slice:250}}...</p>
                   </div>
                 </div>
                 {% endif %}

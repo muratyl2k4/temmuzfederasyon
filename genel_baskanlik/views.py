@@ -4,7 +4,11 @@ from teskilat.views import managerPage as teskilat_mp
 from .models import Yonetim_Kurulu , Denetim_Kurulu , Disiplin_Kurulu , Yurutme_Kurulu
 
 def generalPresidencyPage(request):
-    return render(request , 'general_presidency.html')
+    leader = Denetim_Kurulu.objects.get(id=1)
+    data = { 
+        'manager' : leader
+    }
+    return render(request , 'general_presidency.html' , data)
 
 boardCase = {
     'yonetim-kurulu' : [Yonetim_Kurulu , 'YÖNETİM KURULU'] , 

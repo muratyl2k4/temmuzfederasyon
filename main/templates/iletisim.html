@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/homepage.css'%}">
+    <link rel="stylesheet" href="{% static 'css/iletisim.css'%}">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://kit.fontawesome.com/5af3974b3f.css" crossorigin="anonymous">
@@ -20,34 +21,61 @@
         h2 , h4 { 
             font-family: 'Montserrat';
         }
+        h5 , h6 {
+            font-family: 'Montserrat';
+        }
     </style>
 </head>
-<body>
+<body style="background: url(../static/img/black-back.png);">
     {% include '_navbar.html' %}
     
-    <section id="iletisim" style="margin-top: 200px; margin-bottom: 200px;">
-        <form method="post" action="">{% csrf_token %}
-        <div class="container row mx-auto">
+    <section id="iletisim" class="row mx-auto" style=" margin-top: 200px; margin-bottom: 200px;">
+        
+        <div class="col-lg-6" >
+            <form action="" method="post">{% csrf_token %}
+            <div class="row">
             <h2 class="iletisim text-center">İLETİŞİM</h2>
                 <div class="col-lg-6 text-center">
-                <input class="w-75 mb-3 " type="text" name="name" id="name" placeholder="Ad">
+                <input class="w-100 mb-3 form-control " type="text" name="name" id="name" placeholder="Ad">
              </div>
                 <div class="col-lg-6 text-center">
-                    <input class="w-75 mb-3 " type="text" name="lastname" id="lastname" placeholder="Soyad">
+                    <input class="w-100 mb-3 form-control " type="text" name="lastname" id="lastname" placeholder="Soyad">
                 </div>
                 <div class="col-lg-6 text-center">
-                    <input class="w-75 mb-3 " type="text" name="name" id="name" placeholder="E-mail">
+                    <input class="w-100 mb-3 form-control " type="text" name="name" id="name" placeholder="E-mail">
                 </div>
                 <div class="col-lg-6 text-center">
-                    <input class="w-75 mb-3 " type="text" name="lastname" id="lastname" placeholder="Telefon">
+                    <input class="w-100 mb-3 form-control " type="text" name="lastname" id="lastname" placeholder="Telefon">
                 </div>
+            </div>
                 
-                
-                <textarea class="form-control col-6" aria-label="With textarea" placeholder="Mesajinizi veya onerinizi yaziniz..."></textarea>
-                <button type="submit" class="btn btn-primary rounded-0 col-4 mx-auto mt-2 fs-2">MESAJINI GÖNDER</button>    
-            </form>
+                <textarea class="form-control col-12 " style="height: 90px;" aria-label="With textarea" placeholder="Mesajinizi veya onerinizi yaziniz..."></textarea>
+                <div class="col-12">
+                <button type="submit" class="btn btn-primary w-50 mt-2 fs-2" style="margin-left: 25%;">GÖNDER</button>    
+            </div>
+            </div>
+        </form>
+        <div class="col-lg-6" >
+            <div class="row mx-auto" style="width: 95%;">
+                <div class="col-lg-12 row">
+                    <div class="card mt-5 mt-5" style="box-shadow: none!important;;">
+                        <div class="card-body row ">
+                            <div class="col-lg-9 row ">
+                                <h5 class="col-12"><b>15 TEMMUZ FEDERASYONU İLETİŞİM BİLGİLERİ</b></h5>
+                                <h6 class="col-12"><b>Adres:</b>  Kavaklıdere, Büklüm Cd No:7 D:8, Çankaya/Ankara</h6>
+                                <h6 class="col-12"><b>Telefon:</b>  0 543 880 641</h6>
+                            </div>
+                            <img src="{% static 'img/logo-2.png'%}" class="col-lg-3" alt="">
+                        </div>
+                    </div>
+
+                </div>
+  
         </div>
+    </div>
     </section>
+    <iframe style="margin-top: -100px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d659051.4894881042!2d32.41038581923044!3d39.885023468073406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34fe3ca49b383%3A0x6147ee15e84b8650!2s15%20Temmuz%20Federasyonu!5e0!3m2!1str!2str!4v1689249826576!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 
     {% include '_footer.html' %}
 

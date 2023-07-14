@@ -14,15 +14,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="{% static 'img/logo-2.png'%}" type="image/x-icon"/>
     <title>{{manager.Yonetici_Ismi}}</title>
+    <style>
+        .nav-link { 
+            color: black!important;
+        }
+    </style>
 </head>
-<body style="background: url('{% static "img/black-back.png" %}'); background-color:rgb(220,220,220);">
+<body style="background: url('{% static "img/black-back.png" %}');">
 
     {% include '_navbar.html '%}
     <section id="person">
         <div class="container row mx-auto ">
         <div class="col-lg-12 row mx-auto">
             <div class="col-lg-3 text-center">
-                <img  class="leader-img shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
+                <img  class="leader-img shadow-lg mt-5" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
             </div>
             <div class="col-lg-6 text-center">
                 <span class="leader-name">{{manager.Yonetici_Ismi }}</span>

@@ -9,6 +9,7 @@
     font-family: 'Montserrat' , sans-serif;
     width: fit-content;
     align-self: center;
+    margin-top: 50px;
 }
 
 #newsPage { 
@@ -19,14 +20,17 @@
 }
 
 .newCard { 
-    height: 400px!important;
+    height: 420px!important;
     
 }
 .newCardBody { 
+    
     height: 100%;
-    width: 90%!important;
+    width: 85%!important;
     background-color: white;
     text-align: centers;
+    cursor: pointer;
+    
 
 }
 
@@ -53,8 +57,5 @@
 .new-image { 
     height: 500px;
     margin-top: -50px!important;
-    border-top-left-radius:  2%;
-    border-top-right-radius:  2%;
-    border-bottom-right-radius:  2%;
-    border-bottom-left-radius:  2%;
+    
 }

@@ -15,21 +15,24 @@
 
     <title>Kurumsal</title>
 </head>
-<body style="background: url('{% static "img/black-back.png" %}'); background-color:rgb(220,220,220);">
+<body style="background: url('{% static "img/black-back.png" %}');">
 
     {% include '_navbar.html '%}
 
     <section id="kurumsal">
         <div class="container">
             <h1>{{kurumsal.Federasyon_Aciklama_Title}}</h1>
+            <hr class="w-50 mx-auto">
             <p>{{kurumsal.Federasyon_Aciklama_Text}}</p>
         </div>
         <div class="container">
             <h1>{{kurumsal.Federasyon_Misyon_Title}}</h1>
+            <hr class="w-50 mx-auto">
             <p>{{kurumsal.Federasyon_Misyon_Text}}</p>
         </div>
         <div class="container">
             <h1>{{kurumsal.Federasyon_Vizyon_Title}}</h1>
+            <hr class="w-50 mx-auto">
             <p>{{kurumsal.Federasyon_Vizyon_Text}}</p>
         </div>
     </section>
