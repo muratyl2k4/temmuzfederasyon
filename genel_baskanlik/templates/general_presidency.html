@@ -18,16 +18,16 @@
 </head>
 <body style="background: url('{% static "img/black-back.png" %}');">
    
-    {% include '_navbar.html '%}
+    {% include '_navbar.html'%}
     <section id="parts">
         <div class="col-lg-9 row mx-auto">
             <div class="col-lg-3 text-center">
-                <img onclick="location.href = '../{{city}}/{{manager.id}}'" class="leader-img shadow-lg mt-5" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
+                <img onclick="location.href = '../{{city}}/{{manager.id}}'" class="leader-img shadow-lg mt-5 w-100" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
             </div>
             <div class="col-lg-6 text-center">
                 <span class="leader-name">{{manager.Yonetici_Ismi }}</span>
                 <hr class="w-50 mx-auto">
-                <p class="leader-bio"> {{manager.Yonetici_Biyografisi }} Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo consectetur, ipsum ipsam impedit odit, velit autem perspiciatis nulla, soluta perferendis similique totam ad officia. Dolorum amet corporis ipsa corrupti assumenda, voluptatem molestias consequuntur sunt eveniet, qui tempora est quisquam laudantium quo natus reprehenderit, quasi labore ad? Voluptatibus vel nobis iste dolor, cum praesentium beatae soluta impedit corrupti quo architecto nemo. Provident quo veniam perspiciatis deserunt! Tenetur nisi ut voluptates sint ipsam ea possimus, earum, sed deleniti non veniam voluptatibus consequuntur corporis quam consequatur explicabo, deserunt ab! Nulla, nam. Quis nam totam beatae deleniti dolorem harum optio soluta at ea corporis.</p>
+                <p class="leader-bio"> {{manager.Yonetici_Biyografi }}</p>
             </div>
             <div class="col-lg-3 py-3 position-relative text-center">
                 <h2 class="position-absolute top-50 start-50 translate-middle leader-adjective my-auto">{{manager.Yonetici_Sifati }}</h2> 

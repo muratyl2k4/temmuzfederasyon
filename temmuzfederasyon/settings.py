@@ -15,8 +15,8 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-MEDIA_ROOT = ""
-MEDIA_URL = ""
+MEDIA_ROOT = ''
+MEDIA_URL = ''
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -24,9 +24,9 @@ MEDIA_URL = ""
 SECRET_KEY = 'django-insecure-%qjc#rvabm=ifvgotg25-3)gzzi0l2ou^h+l=2h*n&o(ckgfx-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -113,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'tr-tr'
 
 TIME_ZONE = 'UTC'
 
@@ -126,10 +126,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
 import os
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'donations/static/'),
     os.path.join(BASE_DIR, 'temmuz15gecesi/static/'),
+    os.path.join(BASE_DIR, 'genel_baskanlik/static/'),
+    os.path.join(BASE_DIR, 'sehitler/static/'),
+    os.path.join(BASE_DIR, 'kurumsal/static/'),
+    os.path.join(BASE_DIR, 'news/static/'),
 ]
 
 

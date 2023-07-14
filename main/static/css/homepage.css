@@ -25,17 +25,24 @@
   .logo-text ,  .general-manager-text , .manager-title  , .home-text{ 
     display: none;
   }
-  .logo {
-    font-family: 'Montserrat' sans-serif;
-  }
-
+  
   #cover {
     height: 30%!important;
   }
   .change-fix-top { 
     margin: 0 auto;
+    height: fit-content!important;
     
-    
+  }
+  .change-fix-top .logo {
+    height: 80px;
+    width: 80px!important;
+  }
+  .logo {
+    font-family: 'Montserrat' sans-serif;
+  }
+  .temmuz-fed{
+    display: none;
   }
   
   .mini-desc {

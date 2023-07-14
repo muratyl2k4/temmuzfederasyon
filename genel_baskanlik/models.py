@@ -9,6 +9,9 @@ class Kurul(models.Model):
     class Meta:
         abstract= True
 
+    def __str__(self):
+        return self.Yonetici_Ismi
+
 class Yonetim_Kurulu(Kurul):
     def __init__(self, *args, **kwargs):
         for f in self._meta.fields:
@@ -35,4 +38,4 @@ class Disiplin_Kurulu(Kurul):
         for f in self._meta.fields:
             if f.attname == "parent_field":
                 f.default = "child default"
-        super(Denetim_Kurulu, self).__init__(*args, **kwargs)
+        super(Disiplin_Kurulu, self).__init__(*args, **kwargs)
