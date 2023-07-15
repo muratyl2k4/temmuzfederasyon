@@ -13,7 +13,7 @@
     width: 90%;
 }
 .manager-name { 
-    color: red;
+    color: rgb(0, 0, 0);
 }
 .manager-adjective { 
     color: #a65f18;
@@ -22,5 +22,6 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    cursor: pointer;
     
 }

@@ -124,7 +124,7 @@
               <div class="container row mx-auto">
                 <div class="col-sm-1"></div>
                 {% for new in news%}
-                <div class="blog-card col-sm-3 spring-fever" style="  background: url('{{new.image}}') no-repeat center; background-size: cover;">
+                <div class="blog-card col-sm-3 spring-fever mt-4" style="  background: url('{{new.image}}') no-repeat center; background-size: cover;">
                   <div class="title-content">
                     <h3><a href="#">{{new.Title|slice:40}}...</a></h3>
                     <div class="intro"> <a href="#">{{new.subTitle}}</a> </div>
@@ -264,7 +264,7 @@
                     <div class="col-sm-4 text-end content-text">
                       <h4>{{tem.Title}}</h4>
                       <h4>{{tem.Time}}</h4>
-                      <p> {{tem.Description|slice:250}}...</p>
+                      <p> {{tem.Description|slice:250}}... <a href="15temmuzgecesi">Gecenin Devamı</a></p>
                     </div>
                     <div class="col-sm-4 text-center">
                       <img class="j15-content-image" src="../{{tem.Image}}" alt="" style="width: 200px; height: 200px; border-radius: 50%;">
@@ -278,7 +278,7 @@
                   <div class="col-lg-4 text-start content-text">
                     <h4>{{tem.Title}}</h4>
                     <h4>{{tem.Time}}</h4>
-                    <p> {{tem.Description|slice:250}}...</p>
+                    <p> {{tem.Description|slice:250}}... <a href="15temmuzgecesi">Gecenin Devamı</a></p>
                   </div>
                 </div>
                 {% endif %}

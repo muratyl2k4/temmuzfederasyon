@@ -2,6 +2,7 @@ from django.shortcuts import render , redirect , HttpResponseRedirect
 from django.urls import reverse
 from teskilat.views import managerPage as teskilat_mp
 from .models import Yonetim_Kurulu , Denetim_Kurulu , Disiplin_Kurulu , Yurutme_Kurulu
+from django.db.models import Q
 
 def generalPresidencyPage(request):
     leader = Yonetim_Kurulu.objects.get(Yonetici_Ismi = "Emre ŞAHİN")
@@ -18,10 +19,16 @@ boardCase = {
 }
 def boardPage(request , kurul):
     
-    board_object = boardCase[kurul][0].objects.all()
-   
+    board_object = boardCase[kurul][0].objects.filter(~Q(Yonetici_Ismi = 'Emre ŞAHİN'))
+    
+    baskan  = None
+    if kurul == 'yonetim-kurulu' : 
+        
+        baskan = boardCase[kurul][0].objects.get(Yonetici_Ismi = 'Emre ŞAHİN')
+        
     data = {
-        'kurul' : board_object , 
+        'kurul' : board_object ,
+        'baskan' : baskan , 
         'link_kurul' : kurul , 
         'kurul_isim' : boardCase[kurul][1]
     }
