@@ -26,7 +26,7 @@
         <div class="newsCards row w-75 mx-auto mt-3 mb-5" >
             {% for new in news%}
             <div  class="newCard col-lg-4 row mx-auto  mt-3 mb-5">
-                <div onclick="location.href='haberler/{{new.id}}'" class="newCardBody mx-auto shadow-lg rounded-4">
+                <div onclick="location.href='{{new.Link}}'" class="newCardBody mx-auto shadow-lg rounded-4">
                 <img src="{{new.image}}" class="new-img h-75 w-100 col-12 mt-3 mb-3 rounded-2"  alt="{{new.Description}}">
                 <span class="col-12 newTitle  mt-3" >{{new.Title}}</span>    
                     </div>
