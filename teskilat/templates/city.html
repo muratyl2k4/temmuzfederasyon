@@ -30,7 +30,9 @@
    <section id='city'>
         <div class="container row mx-auto">
             <div class="col-lg-12 mb-5 text-center">
-                <a class="fs-5" href="../{{city}}/ilceler">&#8608;İlçe Başkanlıkları&#8606;</a>
+                <h1  class="fs-1 text-center mng">İL YÖNETİM KURULU
+                </h1>
+                <hr>
             </div>
             {% for manager in management %}
                 {% if manager.Yonetici_Durumu == 'Baskan' %}
@@ -47,25 +49,9 @@
                         <h2 class="position-absolute top-50 start-50 translate-middle leader-adjective my-auto">{{manager.Yonetici_Sifati }}</h2> 
                     </div>
                 </div>
-                <hr>
-                
+                <hr class='mt-2'>
                 {% else %}
                     <div class="col-lg-2 text-center mb-4">
-                        <img class="manager-img mx-auto shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
-                        <h4 class="manager-name">{{manager.Yonetici_Ismi}}</h4>
-                        <h4 class="manager-adjective">{{manager.Yonetici_Sifati}}</h4>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <img class="manager-img mx-auto shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
-                        <h4 class="manager-name">{{manager.Yonetici_Ismi}}</h4>
-                        <h4 class="manager-adjective">{{manager.Yonetici_Sifati}}</h4>
-                    </div>
-                    <div class="col-lg-2 text-center">
-                        <img class="manager-img mx-auto shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
-                        <h4 class="manager-name">{{manager.Yonetici_Ismi}}</h4>
-                        <h4 class="manager-adjective">{{manager.Yonetici_Sifati}}</h4>
-                    </div>
-                    <div class="col-lg-2 text-center">
                         <img class="manager-img mx-auto shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
                         <h4 class="manager-name">{{manager.Yonetici_Ismi}}</h4>
                         <h4 class="manager-adjective">{{manager.Yonetici_Sifati}}</h4>
@@ -74,6 +60,83 @@
 
                 
 
+            {% endfor %}
+        <div class="container mt-3 row mx-auto">
+            <div class="col-lg-12 mb-5 text-center">
+                <h1  class="fs-1 text-center mng">İL KADIN KOLLARI
+                </h1>
+                <hr>
+            </div>
+            {% for manager in womans %}
+                {% if manager.Yonetici_Durumu == 'Baskan' %}
+                <div class="col-lg-12 row mx-auto">
+                    <div class="col-lg-3 text-center">
+                        <img onclick="location.href = '../{{city}}/{{manager.id}}'" class="leader-img shadow-lg w-100" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <span class="leader-name">{{manager.Yonetici_Ismi }}</span>
+                        <hr class="w-50 mx-auto">
+                        <p class="leader-bio"> {{manager.Yonetici_Biyografisi }}</p>
+                    </div>
+                    <div class="col-lg-3 py-3 position-relative text-center">
+                        <h2 class="position-absolute top-50 start-50 translate-middle leader-adjective my-auto">{{manager.Yonetici_Sifati }}</h2> 
+                    </div>
+                </div>
+                <hr class='mt-2'>
+                
+                {% else %}
+                    <div class="col-lg-2 text-center mb-4">
+                        <img class="manager-img mx-auto shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
+                        <h4 class="manager-name">{{manager.Yonetici_Ismi}}</h4>
+                        <h4 class="manager-adjective">{{manager.Yonetici_Sifati}}</h4>
+                    </div>
+                {% endif %}
+
+                
+
+            {% endfor %}
+        <div class="container mt-3 row mx-auto">
+            <div class="col-lg-12 mb-5 text-center">
+                <h1  class="fs-1 text-center mng">İL GENÇLİK KOLLARI
+                </h1>
+                <hr>
+            </div>
+            {% for manager in youngers %}
+                {% if manager.Yonetici_Durumu == 'Baskan' %}
+                <div class="col-lg-12 row mx-auto">
+                    <div class="col-lg-3 text-center">
+                        <img onclick="location.href = '../{{city}}/{{manager.id}}'" class="leader-img shadow-lg w-100" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <span class="leader-name">{{manager.Yonetici_Ismi }}</span>
+                        <hr class="w-50 mx-auto">
+                        <p class="leader-bio"> {{manager.Yonetici_Biyografisi }}</p>
+                    </div>
+                    <div class="col-lg-3 py-3 position-relative text-center">
+                        <h2 class="position-absolute top-50 start-50 translate-middle leader-adjective my-auto">{{manager.Yonetici_Sifati }}</h2> 
+                    </div>
+                </div>
+                <hr class='mt-2'>
+                
+                {% else %}
+                    <div class="col-lg-2 text-center mb-4">
+                        <img class="manager-img mx-auto shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="{{manager.Yonetici_Ismi}}">
+                        <h4 class="manager-name">{{manager.Yonetici_Ismi}}</h4>
+                        <h4 class="manager-adjective">{{manager.Yonetici_Sifati}}</h4>
+                    </div>
+                {% endif %}
+
+                
+
+            {% endfor %}
+        </div>
+
+        <div class="col-lg-12 mb-5 text-center">
+            <h1  class="fs-1 text-center mng">İLÇE BAŞKANLIKLARI
+            </h1>
+            <hr>
+            {% for district in districts %}
+            <a class="fs-2" href="../{{city}}/{{district.Ilce_Ismi}}">&#8608;{{district.Ilce_Ismi}}&#8606;</a>
             {% endfor %}
         </div>
    </section>

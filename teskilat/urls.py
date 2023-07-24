@@ -7,6 +7,6 @@ urlpatterns = [
     
     path('iller/<str:city>' , cityPage , name='il') , 
     path('<str:city>/<int:id>' ,  managerPage) , 
-    path('<str:city>/ilceler' ,  districtPage,) , 
+    path('<str:city>/<str:district>' ,  districtPage,) , 
     
 ]
