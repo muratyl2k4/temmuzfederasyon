@@ -43,7 +43,7 @@
       "hover": "ANKARA",
       "url": "iller/Ankara",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "orange",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -52,7 +52,7 @@
       "hover": "ANTALYA",
       "url": "iller/Antalya",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#DAF7A6",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -301,15 +301,6 @@
       "active": true
     },
     "trjs35": {
-      "hover": "IĞDIR",
-      "url": "iller/Iğdır",
-      "target": "same_window",
-      "upColor": "#FFFFFF",
-      "overColor": "#FFFF00",
-      "downColor": "#cae9af",
-      "active": true
-    },
-    "trjs36": {
       "hover": "ISPARTA",
       "url": "iller/Isparta",
       "target": "same_window",
@@ -319,10 +310,19 @@
       "active": true
     },
     "trjs37": {
+      "hover": "IĞDIR",
+      "url": "iller/Iğdır",
+      "target": "same_window",
+      "upColor": "#FFFFFF",
+      "overColor": "#FFFF00",
+      "downColor": "#cae9af",
+      "active": true
+    },
+    "trjs36": {
       "hover": "İSTANBUL",
       "url": "iller/İstanbul",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#DAF7A6",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -391,33 +391,6 @@
       "active": true
     },
     "trjs45": {
-      "hover": "KIRIKKALE",
-      "url": "iller/Kırıkkale",
-      "target": "same_window",
-      "upColor": "#FFFFFF",
-      "overColor": "#FFFF00",
-      "downColor": "#cae9af",
-      "active": true
-    },
-    "trjs46": {
-      "hover": "KIRKLARELİ",
-      "url": "iller/Kırklareli",
-      "target": "same_window",
-      "upColor": "#FFFFFF",
-      "overColor": "#FFFF00",
-      "downColor": "#cae9af",
-      "active": true
-    },
-    "trjs47": {
-      "hover": "KIRŞEHİR",
-      "url": "iller/Kırşehir",
-      "target": "same_window",
-      "upColor": "#FFFFFF",
-      "overColor": "#FFFF00",
-      "downColor": "#cae9af",
-      "active": true
-    },
-    "trjs48": {
       "hover": "KİLİS",
       "url": "iller/Kilis",
       "target": "same_window",
@@ -426,7 +399,7 @@
       "downColor": "#cae9af",
       "active": true
     },
-    "trjs49": {
+    "trjs46": {
       "hover": "KOCAELİ",
       "url": "iller/Kocaeli",
       "target": "same_window",
@@ -435,7 +408,7 @@
       "downColor": "#cae9af",
       "active": true
     },
-    "trjs50": {
+    "trjs47": {
       "hover": "KONYA",
       "url": "iller/Konya",
       "target": "same_window",
@@ -444,9 +417,36 @@
       "downColor": "#cae9af",
       "active": true
     },
-    "trjs51": {
+    "trjs48": {
       "hover": "KÜTAHYA",
       "url": "iller/Kütahya",
+      "target": "same_window",
+      "upColor": "#FFFFFF",
+      "overColor": "#FFFF00",
+      "downColor": "#cae9af",
+      "active": true
+    },
+    "trjs49": {
+      "hover": "KIRKLARELİ",
+      "url": "iller/Kırklareli",
+      "target": "same_window",
+      "upColor": "#FFFFFF",
+      "overColor": "#FFFF00",
+      "downColor": "#cae9af",
+      "active": true
+    },
+    "trjs50": {
+      "hover": "KIRIKKALE",
+      "url": "iller/Kırıkkale",
+      "target": "same_window",
+      "upColor": "#FFFFFF",
+      "overColor": "#FFFF00",
+      "downColor": "#cae9af",
+      "active": true
+    },
+    "trjs51": {
+      "hover": "KIRŞEHİR",
+      "url": "iller/Kırşehir",
       "target": "same_window",
       "upColor": "#FFFFFF",
       "overColor": "#FFFF00",
@@ -538,7 +538,7 @@
       "hover": "OSMANİYE",
       "url": "iller/Osmaniye",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#DAF7A6",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -701,7 +701,7 @@
   "trjs80":{
     "hover": "ŞANLIURFA",
     "url": "iller/Şanlıurfa", "target": "same_window",
-    "upColor": "#FFFFFF", "overColor": "#FFFF00", "downColor": "#cae9af",
+    "upColor": "#DAF7A6", "overColor": "#FFFF00", "downColor": "#cae9af",
     "active": true
   },
   "trjs81":{

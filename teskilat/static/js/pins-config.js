@@ -1,19 +1,19 @@
-﻿/* 
-var pins_config = {
+﻿var pins_config = {
   "pins":[
-  {
-    "shape": "square",//either "circle" or "square"
-    "hover": "<b><u>ANKARA</u></b><br>Write any text and load images<br><img src='example.png'>",//info of the popup
-    "pos_X": 278,//check the X, Y coordinates guide in the documentation
-    "pos_Y": 130,
+    {
+      "shape": "square",//either "circle" or "square"
+      "hover": "<b><u>ANKARA</u></b><br>Genel Merkez<br>",//info of the popup
+      "pos_X": 278,//check the X, Y coordinates guide in the documentation
+    "pos_Y": 150,
     "size": 16,//size of the pin
-    "outline": "#000080",//outline color of the pin
-    "upColor": "#1a1aff",//color of the pin when map load
-    "overColor": "#66d9ff",//color of the pin when mouse hover
-    "url": "https://www.html5interactivemaps.com/",//link to any webpage
-    "target": "new_window",// use "new_window", "same_window", "modal", or "none"
+    "outline": "red",//outline color of the pin
+    "upColor": "red",//color of the pin when map load
+    "overColor": "black",//color of the pin when mouse hover
+    "url": "iller/Ankara",//link to any webpage
+    "target": "same_window",// use "new_window", "same_window", "modal", or "none"
     "active": true//true/false to activate/deactivate this pin
   },
+  /* 
   {
     "shape": "circle",
     "hover": "<b><u>ISTANBUL</u></b><br><span style='color: #bcbcbc;'>Street Address:</span><br>&nbsp;321 Example, Address 54321<br><span style='color: #bcbcbc;'>Telephone:</span><br>&nbsp;(256) 555-4321 / (256) 555-1234",
@@ -196,7 +196,8 @@ var pins_config = {
     "target": "same_window",
     "active": true
   }// If you want to add more pin, you need to add comma ',' here
-  ]
+  */
+]
 };
 
 // The following is the script for pins interaction DON'T EDIT !!!
@@ -304,4 +305,3 @@ function trjsAddEvent(id) {
     }
   }
 }
-*/
