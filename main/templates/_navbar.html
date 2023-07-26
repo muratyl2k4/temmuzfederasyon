@@ -21,21 +21,39 @@
           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="../" >ANA SAYFA</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link  " href="../genelbaskanlik" >GENEL BAŞKANLIK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link  " href="../kurumsal" >KURUMSAL</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link  "role="button" data-bs-toggle="dropdown-menu" aria-expanded="false" href="../kurumsal" >KURUMSAL</a>
+            <ul class="dropdown-menu row mx-auto fw-bold">
+              <li class="col-4 fs-4"><hr class="w-75 mx-auto"><a href="../kurumsal" class="mt-1 dropdown-item fw-bold">HAKKIMIZDA</a><hr class="w-75 mx-auto"></li>
+              <li class="col-4 fs-4"><hr class="w-75 mx-auto"><a href="../kurumsal" class="mt-1 dropdown-item fw-bold">MİSYONUMUZ</a><hr class="w-75 mx-auto"></li>
+              <li class="col-4 fs-4"><hr class="w-75 mx-auto"><a href="../kurumsal" class="mt-1 dropdown-item fw-bold">VİZYONUMUZ</a><hr class="w-75 mx-auto"></li>
+            
+            </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="../iller" role="button" data-bs-toggle="dropdown-menu" aria-expanded="false" >
+            <a class="nav-link  "role="button" data-bs-toggle="dropdown-menu" aria-expanded="false" href="../genelbaskanlik" >GENEL MERKEZ</a>
+            <ul class="dropdown-menu row mx-auto fw-bold mt-1">
+              {% load asd %}
+                {% y %}
+              <div class="row" style="width: 40%;">
+              <li class="col-6 fs-4"><a href="../genelbaskanlik/yonetim-kurulu" class="mt-5 dropdown-item fw-bold">YÖNETİM KURULU</a><hr></li>
+              <li class="col-6 fs-4"><a href="../genelbaskanlik/yurutme-kurulu" class="mt-5 dropdown-item fw-bold">YÜRÜTME KURULU</a><hr></li>
+              <li class="col-6 fs-4"><a href="../genelbaskanlik/denetim-kurulu" class="dropdown-item fw-bold">DENETİM KURULU</a><hr></li>
+              <li class="col-6 fs-4"><a href="../genelbaskanlik/disiplin-kurulu" class="dropdown-item fw-bold">DİSİPLİN KURULU</a><hr></li>
+            </div>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="../iller" >
               İL BAŞKANLIKLARI
             </a>
+            <!--
             {% load asd %}
             <ul class="dropdown-menu row mx-auto">
               {% x %}
             </ul>
           </li>
+          -->
           <li class="nav-item">
             <a class="nav-link  " href="../sehitler" >AZİZ ŞEHİTLERİMİZ</a>
           </li>

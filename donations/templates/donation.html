@@ -29,12 +29,17 @@
             
           </div>
           <div class="col-lg-6 ">
-          <div class="donation-desc justify-content-center" >
+          <div class="donation-desc text-center" >
             <h2 class="text-center">{{donation.Baslik}}</h2>
-            <h4 class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, voluptas! Eaque neque quos nemo sit veritatis. Maiores, id. Numquam ad cum, voluptas eligendi quo molestiae maiores hic blanditiis voluptates libero atque facere, voluptatum quam. Reprehenderit qui earum magnam quaerat quae!</h4>
+            <h4 class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, voluptas! Eaque neque quos nemo sit veritatis. Maiores, id. Numquam ad cum, voluptas eligendi quo molestiae maiores hic blanditiis voluptates libero atque facere, voluptatum quam. Reprehenderit qui earum magnam quaerat quae!</h4>
             <center>
             <a type="button" class=" btn btn-lg rounded-4 text-white fs-4 donation-btn mx-auto">BAĞIŞ YAP</a>
           </center>
+          <div class="mt-2">
+          <button type="button" style="background: transparent; border: none;" onclick="downDonate()"><i class="fa-solid fa-minus"></i></button>
+          <input type="number" style="width: 50px;" id="myNumber" min="1" max='1000' value="1">
+          <button type="button" style="background: transparent; border: none;" onclick="upDonate()"><i class="fa-solid fa-plus"></i></button>
+            </div>
             </div>
           </div>
           <div class="col-lg-3">
@@ -46,7 +51,20 @@
       </section>
 
     {% include '_footer.html' %}
-
+    <script>
+      function upDonate() {
+        if (parseInt(document.getElementById("myNumber").value) < 1000) {	
+        var x = parseInt(document.getElementById("myNumber").value) + 1;
+        document.getElementById("myNumber").value = x; }
+        ;
+      }
+      function downDonate() {
+        if (parseInt(document.getElementById("myNumber").value) > 0) {	
+        var x = parseInt(document.getElementById("myNumber").value) - 1;
+        document.getElementById("myNumber").value = x; }
+        ;
+      }
+      </script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v17.0" nonce="Ss5egiqo"></script>    
     <script src="index.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/5af3974b3f.js" crossorigin="anonymous"></script>

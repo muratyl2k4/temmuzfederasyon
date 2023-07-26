@@ -1,4 +1,5 @@
 from django import template
+from genel_baskanlik.models import Yonetim_Kurulu
 
 from django.utils.html import format_html
 
@@ -91,7 +92,12 @@ turkiye_illeri = [
 def x():
     text = ''
     for a in turkiye_illeri:
-        text+= '<li><a class="dropdown-item col-3" href="../iller/{}">{}</a></li>'.format(a[1] , a[1])
+        text+= '<li><a class="dropdown-item col-3" href="../iller/{}">{} - {}</a></li>'.format(a[1]  ,a[0] , a[1])
     
     
+    return format_html(text)
+gb = Yonetim_Kurulu.objects.get(id=5)
+@register.simple_tag
+def y():
+    text = f'<li style="margin-left:10%; width: 30%;"><a href="../genelbaskanlik" class="dropdown-item"><p class="" style="font-size:24px; font-family:"Montserrat" ,sans-serif;">Emre ŞAHİN</p><hr class="w-50 mx-auto"> <img style="width:40%;" src="../{gb.Yonetici_Resmi}" > <p class="mt-2" style="font-size:20px;">Genel Başkan</p></a></li>'
     return format_html(text)

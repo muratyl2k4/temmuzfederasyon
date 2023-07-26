@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, render
 from sehitler.models import Sehit
 from donations.models import Bagis
 from news.models import New
@@ -6,6 +7,8 @@ from temmuz15gecesi.models import Temmuz15
 from teskilat.models import Ilce
 from teskilat.models import Il
 import time
+from django.http import FileResponse, Http404
+
 # Create your views here.
 
 
@@ -25,3 +28,8 @@ def homePage(request):
 
 def contactPage(request):
     return render(request , 'iletisim.html')
+
+def pols(request):
+    
+    return FileResponse(open('main/templates/15pol.pdf', 'rb'), content_type='application/pdf')
+    

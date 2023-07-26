@@ -11,6 +11,7 @@ body {
 
 font-family: 'Montserrat' sans-serif;
 font-weight: bolder;
+
 }
 
 .nav-link { 
@@ -21,6 +22,8 @@ font-weight: bolder;
 .donation-desc h4{ 
     margin-top: 2%;
     font-family: 'Montserrat';
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .donation-logo { 

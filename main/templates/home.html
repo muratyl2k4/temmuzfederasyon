@@ -82,9 +82,8 @@
               <div class="row donation-packs w-100 mx-auto">
                 {% for donation in donations %}
                 <div class="col-lg-4 donation-pack mt-1">
-                  <div class="card mx-auto rounded-1" style="width: fit-content; height: fit-content; background-color: rgb(255, 255, 255);">
+                  <div class="card mx-auto rounded-1" style="width: fit-content; height: fit-content; background-color: white ">
                     <div class="card-body row">
-                        
                       <h5 class="card-title fw-bold col-lg-12 text-center">{{donation.Baslik}}</h5>
                       
                       <hr class="w-75 mx-auto">
@@ -131,7 +130,7 @@
                   </div>
                   <div class="card-info">
                       {{new.Description|slice:60}}...
-                    <a href="haberler/{{new.id}}">Haberi oku<span class="licon icon-arr icon-black"></span></a>
+                    <a href="{{new.Link}}">Haberi oku<span class="licon icon-arr icon-black"></span></a>
                   </div>
                 
                 </div>
@@ -254,7 +253,8 @@
               <div class="container">
                 <div class="july15-top">
                   <h4 class="text-center" >15 TEMMUZ GUNU</h4>
-                  <p class="text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum, cum!</p>
+                  <p class="text-center">Birlikte Güçlüyüz, 15 Temmuz'un Unutulmaz Kahramanlarıyla!
+                  </p>
                 </div>
                 <div class="july15-content" >
                   <div class="j15-line">

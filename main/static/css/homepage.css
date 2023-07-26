@@ -153,17 +153,16 @@
  
   table-layout: fixed;
   
-  height: 50px;
-  line-height: 50px;
-  width: 10%;
+  
+  
   vertical-align: middle;
   
 }
 
 .dropdown-menu li:hover .dropdown-item{
-  background-color: black!important;
-  color: white!important;
-  font-size: 24px;
+  background-color: white!important;
+  color: #a65f18!important;
+
 }
 
 .dropdown-item {
