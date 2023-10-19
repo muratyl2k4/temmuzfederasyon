@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="{% static 'img/logo-2.png'%}" type="image/x-icon"/>
 
-    <title>{{district}} İlçe Başkanlığı</title>
+    <title>{{districtt}} İlçe Başkanlığı</title>
 </head>
 <body style="background: url('{% static "img/black-back.png" %}');">
 
@@ -25,16 +25,16 @@
 
 
     <section id="head" class="text-center">
-        <h1 class="city-title "> {{city|upper}}  İLÇE BAŞKANLIKLARI</h1>
+        <h1 class="city-title "> {{districtt|upper}}  İLÇE BAŞKANLIĞI</h1>
     </section>
    <section id='city'>
-        <div class="container row mx-auto">
-            {% for district in management %}
-            {% if not district.0 == None %}
-                <h2 class="text-center col-12 district-title mt-5" >{{district.0.Yonetici_Il}} İlçe Yönetim Kurulu</h2>
-                <hr>
-               {% endif %}
-                {% for manager in district %}
+       <div class="container row mx-auto">
+           
+           <h2 class="text-center col-12 district-title mt-5" >{{district.0.Yonetici_Il}} İlçe Yönetim Kurulu</h2>
+           <hr>
+           
+           {% for manager in management %}
+            
                     {% if manager.Yonetici_Durumu == 'Baskan' %}
                         <div class="col-lg-12 row mx-auto">
                             <div class="col-lg-3 text-center">
@@ -62,16 +62,15 @@
                 
                 
                 {% endif %}
-                {% endfor %}
+                
             {% endfor %}
         </div>
         <div class="container row mx-auto">
-            {% for district in womans %}
-            {% if not district.0 == None %}
-                <h2 class="text-center col-12 district-title mt-5" >{{district.0.Yonetici_Il}} İlçe Kadın Kolları</h2>
-                <hr>
-               {% endif %}
-                {% for manager in district %}
+            <h2 class="text-center col-12 district-title mt-5" >{{district.0.Yonetici_Il}} İlçe Kadın Kolları</h2>
+            <hr>
+            {% for manager in womans %}
+           
+                
                     {% if manager.Yonetici_Durumu == 'Baskan' %}
                         <div class="col-lg-12 row mx-auto">
                             <div class="col-lg-3 text-center">
@@ -99,16 +98,15 @@
                 
                 
                 {% endif %}
-                {% endfor %}
+                
             {% endfor %}
         </div>
         <div class="container row mx-auto">
-            {% for district in youngers %}
-            {% if not district.0 == None %}
-                <h2 class="text-center col-12 district-title mt-5" >{{district.0.Yonetici_Il}} İlçe Gençlik Kolları</h2>
-                <hr>
-               {% endif %}
-                {% for manager in district %}
+            <h2 class="text-center col-12 district-title mt-5" >{{district.0.Yonetici_Il}} İlçe Gençlik Kolları</h2>
+            <hr>
+            {% for manager in youngers %}
+         
+              
                     {% if manager.Yonetici_Durumu == 'Baskan' %}
                         <div class="col-lg-12 row mx-auto">
                             <div class="col-lg-3 text-center">
@@ -136,7 +134,7 @@
                 
                 
                 {% endif %}
-                {% endfor %}
+                
             {% endfor %}
         </div>
    </section>

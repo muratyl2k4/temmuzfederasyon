@@ -17,11 +17,19 @@
 }
 .manager-adjective { 
     color: #a65f18;
+    font-size: 18px;
+}
+.manager-img-wrapper {
+    height: 205px;
+    width: 205px; 
+    background: url('../img/yildiz.png') no-repeat;
+    background-size: 100%;
+   
 }
 .manager-image { 
     border-radius: 50%;
+    margin-top: 27px;
     width: 150px;
     height: 150px;
     cursor: pointer;
-    
 }

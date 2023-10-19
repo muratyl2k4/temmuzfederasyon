@@ -22,22 +22,53 @@
         <h2 class="board-name text-center">{{kurul_isim}}</h2>
         <div class="managers row w-75 mx-auto">
             {% if baskan != None %}
-            <div class="manager col-lg-3 mt-3 mb-2 text-center" >
-                <img style="object-fit:cover;" onclick="location.href='../{{link_kurul}}/{{baskan.id}}'" class="manager-image shadow-lg" src="../{{baskan.Yonetici_Resmi}}" alt="15 Temmuz Federasyonu {{baskan.Yonetici_Ismi}}">
+            <div class="manager col-lg-12 mt-3 mb-2 text-center" >
+
+                <div class="manager-img-wrapper mx-auto"> 
+                    <img style="object-fit:cover;" onclick="location.href='../{{link_kurul}}/{{baskan.id}}'" class="manager-image shadow-lg" src="../{{baskan.Yonetici_Resmi}}" alt="15 Temmuz Federasyonu {{baskan.Yonetici_Ismi}}">
+               
+                </div>
                 <h2 class="manager-name text-center">{{baskan.Yonetici_Ismi}}</h2>
                 <p class="manager-adjective text-center">{{baskan.Yonetici_Sifati}}</p>
             </div>
-            {% endif %}
-        {% for manager in kurul %}
+            {% for manager in TE %}
+            <div class="manager col-lg-3  mb-2 text-center" >
+                
+                <div class="manager-img-wrapper mx-auto"> 
+                    <img style="object-fit:cover;" onclick="location.href='../{{link_kurul}}/{{manager.id}}'" class="manager-image shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="15 Temmuz Federasyonu {{manager.Yonetici_Ismi}}">
+                    
+                </div>
+                <h2 class="manager-name text-center">{{manager.Yonetici_Ismi}}</h2>
+                <p class="manager-adjective text-center">{{manager.Yonetici_Sifati}}</p>
+            </div>
+            {% endfor %}
+            {% for manager in MF %}
+            <div class="manager col-lg-3  mb-2 text-center" >
+                
+                <div class="manager-img-wrapper mx-auto"> 
+                    <img style="object-fit:cover;" onclick="location.href='../{{link_kurul}}/{{manager.id}}'" class="manager-image shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="15 Temmuz Federasyonu {{manager.Yonetici_Ismi}}">
+                    
+                </div>
+                <h2 class="manager-name text-center">{{manager.Yonetici_Ismi}}</h2>
+                <p class="manager-adjective text-center">{{manager.Yonetici_Sifati}}</p>
+            </div>
+            {% endfor %}
+        {% else %}    
+            {% for manager in kurul %}
             <div class="manager col-lg-3 mt-3 mb-2 text-center" >
-                <img style="object-fit:cover;" onclick="location.href='../{{link_kurul}}/{{manager.id}}'" class="manager-image shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="15 Temmuz Federasyonu {{manager.Yonetici_Ismi}}">
+                
+                <div class="manager-img-wrapper mx-auto"> 
+                    <img style="object-fit:cover;" onclick="location.href='../{{link_kurul}}/{{manager.id}}'" class="manager-image shadow-lg" src="../{{manager.Yonetici_Resmi}}" alt="15 Temmuz Federasyonu {{manager.Yonetici_Ismi}}">
+                    
+                </div>
                 <h2 class="manager-name text-center">{{manager.Yonetici_Ismi}}</h2>
                 <p class="manager-adjective text-center">{{manager.Yonetici_Sifati}}</p>
             </div>
        
         {% endfor %}
-        </div>
-            </section>
+        {% endif %}
+    </div>
+</section>
  
     {% include '_footer.html' %}
 

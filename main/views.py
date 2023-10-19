@@ -31,5 +31,5 @@ def contactPage(request):
 
 def pols(request):
     
-    return FileResponse(open('main/templates/15pol.pdf', 'rb'), content_type='application/pdf')
+    return FileResponse(open('main/templates/15pol.pdf' , 'rb'), content_type='application/pdf')
     

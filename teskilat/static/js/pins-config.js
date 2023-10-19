@@ -9,7 +9,7 @@
     "outline": "red",//outline color of the pin
     "upColor": "red",//color of the pin when map load
     "overColor": "black",//color of the pin when mouse hover
-    "url": "iller/Ankara",//link to any webpage
+    "url": "../genelbaskanlik",//link to any webpage
     "target": "same_window",// use "new_window", "same_window", "modal", or "none"
     "active": true//true/false to activate/deactivate this pin
   },

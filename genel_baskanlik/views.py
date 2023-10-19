@@ -1,5 +1,5 @@
-from django.shortcuts import render , redirect , HttpResponseRedirect
-from django.urls import reverse
+from django.shortcuts import render 
+
 from teskilat.views import managerPage as teskilat_mp
 from .models import Yonetim_Kurulu , Denetim_Kurulu , Disiplin_Kurulu , Yurutme_Kurulu
 from django.db.models import Q
@@ -19,18 +19,22 @@ boardCase = {
 }
 def boardPage(request , kurul):
     
-    board_object = boardCase[kurul][0].objects.filter(~Q(Yonetici_Ismi = 'Emre ŞAHİN'))
-    
-    baskan  = None
-    if kurul == 'yonetim-kurulu' : 
-        
-        baskan = boardCase[kurul][0].objects.get(Yonetici_Ismi = 'Emre ŞAHİN')
+    board_object = boardCase[kurul][0].objects.all().order_by('id')
+    baskan = None
+    MF = None
+    TE = None
+    if boardCase[kurul][0] == Yonetim_Kurulu:
+        baskan = board_object.get(Yonetici_Ismi = 'Emre ŞAHİN')
+        MF = board_object[1:3]
+        TE = board_object[3:5]
         
     data = {
-        'kurul' : board_object ,
-        'baskan' : baskan , 
+        'kurul' : board_object , 
         'link_kurul' : kurul , 
-        'kurul_isim' : boardCase[kurul][1]
+        'kurul_isim' : boardCase[kurul][1] , 
+        'baskan' : baskan , 
+        'TE' : TE ,
+        'MF' : MF
     }
     return render(request , 'board.html' , data)
 

@@ -135,6 +135,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'sehitler/static/'),
     os.path.join(BASE_DIR, 'kurumsal/static/'),
     os.path.join(BASE_DIR, 'news/static/'),
+    os.path.join(BASE_DIR, 'teskilat/static/'),
 ]
 
 

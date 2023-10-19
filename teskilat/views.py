@@ -26,15 +26,15 @@ def cityPage(request , city):
     return render(request , 'city.html' , data)
 
 def districtPage(request , city , district): 
-    district = Ilce.objects.get(Ilce_Sehir = Il.objects.get(Sehir_Ismi = city) , Ilce_Ismi = district)
+    districtx = Ilce.objects.get(Ilce_Sehir = Il.objects.get(Sehir_Ismi = city) , Ilce_Ismi = district)
 
-    district_management = Ilce_Baskanligi.objects.filter(Yonetici_Il = district).order_by(
+    district_management = Ilce_Baskanligi.objects.filter(Yonetici_Il = districtx).order_by(
             'Yonetici_Durumu'
     )
-    district_womans = Ilce_Kadin_Kollari.objects.filter(Yonetici_Il = district).order_by(
+    district_womans = Ilce_Kadin_Kollari.objects.filter(Yonetici_Il = districtx).order_by(
             'Yonetici_Durumu'
     )
-    district_youngers = Ilce_Genclik_Kollari.objects.filter(Yonetici_Il = district).order_by(
+    district_youngers = Ilce_Genclik_Kollari.objects.filter(Yonetici_Il = districtx).order_by(
             'Yonetici_Durumu'
     )
     #management_of_district = management_of_district.order_by('Yonetici_Durumu')

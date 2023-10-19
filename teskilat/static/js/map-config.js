@@ -3,7 +3,7 @@
     "hover": "ADANA",//info of the popup
     "url": 'iller/Adana',//link to any webpage
     "target": "same_window",// use "new_window", "same_window", "modal", or "none"
-    "upColor": "#FFFFFF",//default color
+    "upColor": "#358E6E",//default color
     "overColor": "#FFFF00",//highlight color
     "downColor": "#cae9af",//clicking color
     "active": true//true/false to activate/deactivate
@@ -11,13 +11,13 @@
   "trjs2":{
     "hover": "ADIYAMAN",
     "url": "iller/Adıyaman", "target": "same_window",
-    "upColor": "#FFFFFF", "overColor": "#FFFF00", "downColor": "#cae9af",
+    "upColor": "#6B1A81", "overColor": "#FFFF00", "downColor": "#cae9af",
     "active": true
   },
   "trjs3":{
     "hover": "AFYONKARAHISAR",
     "url": "iller/Afyon", "target": "same_window",
-    "upColor": "#FFFFFF", "overColor": "#FFFF00", "downColor": "#cae9af",
+    "upColor": "#C8ED9D", "overColor": "#FFFF00", "downColor": "#cae9af",
     "active": true
   },
   
@@ -25,7 +25,7 @@
       "hover": "AKSARAY",
       "url": "iller/Aksaray",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#FABFF7",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -34,7 +34,7 @@
       "hover": "AMASYA",
       "url": "iller/Amasya",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#EF84CA",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -43,7 +43,7 @@
       "hover": "ANKARA",
       "url": "iller/Ankara",
       "target": "same_window",
-      "upColor": "orange",
+      "upColor": "red",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -52,7 +52,7 @@
       "hover": "ANTALYA",
       "url": "iller/Antalya",
       "target": "same_window",
-      "upColor": "#DAF7A6",
+      "upColor": "#72DAFF",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -61,7 +61,7 @@
       "hover": "ARDAHAN",
       "url": "iller/Ardahan",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#EBFDED",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -70,7 +70,7 @@
       "hover": "ARTVİN",
       "url": "iller/Artvin",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#C34AE7",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -79,7 +79,7 @@
       "hover": "AYDIN",
       "url": "iller/Aydın",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#99557E",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -88,7 +88,7 @@
       "hover": "AĞRI",
       "url": "iller/Ağrı",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#BAAF43",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -97,7 +97,7 @@
       "hover": "BALIKESİR",
       "url": "iller/Balıkesir",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#72DAFF",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -106,7 +106,7 @@
       "hover": "BARTIN",
       "url": "iller/Bartin",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#63802E",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -115,7 +115,7 @@
       "hover": "BATMAN",
       "url": "iller/Batman",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#78855A",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -124,7 +124,7 @@
       "hover": "BAYBURT",
       "url": "iller/Bayburt",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#4AC838",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -133,7 +133,7 @@
       "hover": "BİLECİK",
       "url": "iller/Bilecik",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#A1C9E3",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -142,7 +142,7 @@
       "hover": "BİNGÖL",
       "url": "iller/Bingöl",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#C698F2",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -151,7 +151,7 @@
       "hover": "BİTLİS",
       "url": "iller/Bitlis",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#F999F0",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -160,7 +160,7 @@
       "hover": "BOLU",
       "url": "iller/Bolu",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#BE7F88",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -169,7 +169,7 @@
       "hover": "BURDUR",
       "url": "iller/Burdur",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#81D776",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -178,7 +178,7 @@
       "hover": "BURSA",
       "url": "iller/Bursa",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#20FD60",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -187,7 +187,7 @@
       "hover": "DENİZLİ",
       "url": "iller/Denizli",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#358E6E",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -196,7 +196,7 @@
       "hover": "DİYARBAKIR",
       "url": "iller/Diyarbakır",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#D98956",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -205,7 +205,7 @@
       "hover": "DÜZCE",
       "url": "iller/Düzce",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#972C72",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -214,7 +214,7 @@
       "hover": "EDİRNE",
       "url": "iller/Edirne",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#AA28EA",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -223,7 +223,7 @@
       "hover": "ELAZIĞ",
       "url": "iller/Elazığ",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#2212A9",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -232,7 +232,7 @@
       "hover": "ERZİNCAN",
       "url": "iller/Erzincan",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#EAF62A",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -241,7 +241,7 @@
       "hover": "ERZURUM",
       "url": "iller/Erzurum",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#C5BC6D",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -250,7 +250,7 @@
       "hover": "ESKİŞEHİR",
       "url": "iller/Eskişehir",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#358E6E",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -259,7 +259,7 @@
       "hover": "GAZİANTEP",
       "url": "iller/Gaziantep",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#C1239E",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -268,7 +268,7 @@
       "hover": "GİRESUN",
       "url": "iller/Giresun",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#20A2FF",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -277,7 +277,7 @@
       "hover": "GÜMÜŞHANE",
       "url": "iller/Gümüşhane",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#1A8F5B",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -286,7 +286,7 @@
       "hover": "HAKKARİ",
       "url": "iller/Hakkari",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#C7164C",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -295,7 +295,7 @@
       "hover": "HATAY",
       "url": "iller/Hatay",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#98D0DD",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -304,7 +304,7 @@
       "hover": "ISPARTA",
       "url": "iller/Isparta",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#F01CEA",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -313,7 +313,7 @@
       "hover": "IĞDIR",
       "url": "iller/Iğdır",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#1A4C17",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -331,7 +331,7 @@
       "hover": "İZMİR",
       "url": "iller/İzmir",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#4F2CC4",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -340,7 +340,7 @@
       "hover": "KAHRAMANMARAŞ",
       "url": "iller/Kahramanmaraş",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#5FEA59",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -349,7 +349,7 @@
       "hover": "KARABÜK",
       "url": "iller/Karabük",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#B327C8",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -358,7 +358,7 @@
       "hover": "KARAMAN",
       "url": "iller/Karaman",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#FDE75E",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -367,7 +367,7 @@
       "hover": "KARS",
       "url": "iller/Kars",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#7296E2",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -376,7 +376,7 @@
       "hover": "KASTAMONU",
       "url": "iller/Kastamonu",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#9EF7FB",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -385,7 +385,7 @@
       "hover": "KAYSERİ",
       "url": "iller/Kayseri",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#E048BF",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -403,7 +403,7 @@
       "hover": "KOCAELİ",
       "url": "iller/Kocaeli",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#1C4235",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -412,7 +412,7 @@
       "hover": "KONYA",
       "url": "iller/Konya",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#D44429",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -421,7 +421,7 @@
       "hover": "KÜTAHYA",
       "url": "iller/Kütahya",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#CDF429",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -430,7 +430,7 @@
       "hover": "KIRKLARELİ",
       "url": "iller/Kırklareli",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#355C2F",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -439,7 +439,7 @@
       "hover": "KIRIKKALE",
       "url": "iller/Kırıkkale",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#46FF2D",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -448,7 +448,7 @@
       "hover": "KIRŞEHİR",
       "url": "iller/Kırşehir",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#96B06F",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -457,7 +457,7 @@
       "hover": "MALATYA",
       "url": "iller/Malatya",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#E6AA76",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -466,7 +466,7 @@
       "hover": "MANİSA",
       "url": "iller/Manisa",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#981EFF",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -475,7 +475,7 @@
       "hover": "MARDİN",
       "url": "iller/Mardin",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#697CC9",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -484,7 +484,7 @@
       "hover": "MERSİN",
       "url": "iller/Mersin",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#7BAFDF",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -493,7 +493,7 @@
       "hover": "MUĞLA",
       "url": "iller/Muğla",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#24DF3A",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -502,7 +502,7 @@
       "hover": "MUŞ",
       "url": "iller/Muş",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#1C8388",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -511,7 +511,7 @@
       "hover": "NEVŞEHİR",
       "url": "iller/Nevşehir",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#CB4939",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -520,7 +520,7 @@
       "hover": "NİĞDE",
       "url": "iller/Niğde",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#B6A0CF",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -529,7 +529,7 @@
       "hover": "ORDU",
       "url": "iller/Ordu",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#9C3FE6",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -547,7 +547,7 @@
       "hover": "RİZE",
       "url": "iller/Rize",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#978263",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -556,7 +556,7 @@
       "hover": "SAKARYA",
       "url": "iller/Sakarya",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#20E84A",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -565,7 +565,7 @@
       "hover": "SAMSUN",
       "url": "iller/Samsun",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#D4CD34",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -574,7 +574,7 @@
       "hover": "SİİRT",
       "url": "iller/Siirt",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#1D3BE7",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -583,7 +583,7 @@
       "hover": "SİNOP",
       "url": "iller/Sinop",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#D4CD34",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -592,7 +592,7 @@
       "hover": "SİVAS",
       "url": "iller/Sivas",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#EF8CCC",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -601,7 +601,7 @@
       "hover": "TEKİRDAĞ",
       "url": "iller/Tekirdağ",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#EB2D39",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -610,7 +610,7 @@
       "hover": "TOKAT",
       "url": "iller/Tokat",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#393FF9",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -619,7 +619,7 @@
       "hover": "TRABZON",
       "url": "iller/Trabzon",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#EAF8C7",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -628,7 +628,7 @@
       "hover": "TUNCELİ",
       "url": "iller/Tunceli",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#669EFD",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -637,7 +637,7 @@
       "hover": "UŞAK",
       "url": "iller/Uşak",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#F39921",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -646,7 +646,7 @@
       "hover": "VAN",
       "url": "iller/Van",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#CA3E2D",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -655,7 +655,7 @@
       "hover": "YALOVA",
       "url": "iller/Yalova",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#blue",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -664,7 +664,7 @@
       "hover": "YOZGAT",
       "url": "iller/Yozgat",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#09D54F",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -673,7 +673,7 @@
       "hover": "ZONGULDAK",
       "url": "iller/Zonguldak",
       "target": "same_window",
-      "upColor": "#FFFFFF",
+      "upColor": "#9DECFB",
       "overColor": "#FFFF00",
       "downColor": "#cae9af",
       "active": true
@@ -683,31 +683,31 @@
   "trjs77":{
     "hover": "ÇANAKKALE",
     "url": "iller/Çanakkale", "target": "same_window",
-    "upColor": "#FFFFFF", "overColor": "#FFFF00", "downColor": "#cae9af",
+    "upColor": "#19559D", "overColor": "#FFFF00", "downColor": "#cae9af",
     "active": true
   },
   "trjs78":{
     "hover": "ÇANKIRI",
     "url": "iller/Çankırı", "target": "same_window",
-    "upColor": "#FFFFFF", "overColor": "#FFFF00", "downColor": "#cae9af",
+    "upColor": "#E08479", "overColor": "#FFFF00", "downColor": "#cae9af",
     "active": true
   },
   "trjs79":{
     "hover": "ÇORUM",
     "url": "iller/Çorum", "target": "same_window",
-    "upColor": "#FFFFFF", "overColor": "#FFFF00", "downColor": "#cae9af",
+    "upColor": "#B327C8", "overColor": "#FFFF00", "downColor": "#cae9af",
     "active": true
   },
   "trjs80":{
     "hover": "ŞANLIURFA",
     "url": "iller/Şanlıurfa", "target": "same_window",
-    "upColor": "#DAF7A6", "overColor": "#FFFF00", "downColor": "#cae9af",
+    "upColor": "#D6FFD8", "overColor": "#FFFF00", "downColor": "#cae9af",
     "active": true
   },
   "trjs81":{
     "hover": "ŞIRNAK",
     "url": "iller/Şırnak", "target": "same_window",
-    "upColor": "#FFFFFF", "overColor": "#FFFF00", "downColor": "#cae9af",
+    "upColor": "#FC8FFF", "overColor": "#FFFF00", "downColor": "#cae9af",
     "active": true
   },
   "general":{
